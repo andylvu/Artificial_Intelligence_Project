@@ -1,0 +1,190 @@
+Food,Category,Price,weight (lbs)
+chicken breast,meat,11.78,4.7
+80% lean ground beef,meat,5.99,1
+80% lean ground beef,meat,15.99,3
+pork sausage roll,meat,3.99,1
+cilantro boneless chicken breast ,meat,7.99,1.25
+hardwood smoked bacon,meat,5.49,1
+Skinless chicken ternderloins,meat,8.53,1.89
+93% lean ground beef,meat,7.49,1
+85% lean ground turkey,meat,3.99,1
+original mashed potatoes,veggie,3.99,1.5
+beef loin steak,meat,11.99,0.875
+pork back ribs,meat,14.72,3.55
+73% lean ground beef,meat,4.79,1
+skin on drum sticks,meat,8.76,4.4
+ground beef patties,meat,11.99,2.2
+atlantic salmon filet,meat,7.99,1
+chicken thighs,meat,11.02,5.5
+sloppy joe sauce,meat,1,0.94
+shaved steak,meat,6.99,0.875
+pepperoni,meat,3.49,0.375
+breakfast sausage links,meat,2.5,0.75
+chicken wings,meat,18.66,4.35
+pork half loin,meat,11.72,3.9
+deli turkey breast,meat,4.49,0.5625
+pork loin filet,meat,5.99,1.7
+shrimp bowl,meat,5,0.4375
+large frozen raw shrimp,meat,13.98,2
+italian ground sausage,meat,5.49,1
+boneless pork chop,meat,7.37,1.23
+favorite franks,meat,1.19,0.75
+banana,fruit,0.23,0.41
+strawberries,fruit,2.5,1
+cucumber,veggie,0.69,0.75
+avocado,fruit,2,0.375
+cherry tomato,fruit,0.36,0.3
+iceberg lettuce,veggie,1.99,2
+green bell pepper,veggie,0.79,5.3
+sweet onion,veggie,0.5,0.5
+red grape,fruit,4.98,2
+green onion,veggie,0.5,0.25
+aspargus,veggie,3.29,1
+broccoli,veggie,1.3,0.69
+celery,veggie,1.49,0.125
+cilantro,veggie,0.79,0.175
+lemon,fruit,0.89,0.175
+vine tomatoes,fruit,1.69,0.5
+raspberries,fruit,1.67,0.375
+zucchini,veggie,0.75,0.5
+mandarins,fruit,4.99,3
+red onions,veggie,1.59,0.5
+honey crisp apple,fruit,1.25,0.5
+opal apple,fruit,1,0.5
+baby carrots,veggie,0.99,1
+garlic,veggie,0.5,0.015
+jalapeno peppers,veggie,0.15,0.15
+blueberries,fruit,3.29,0.6875
+russet potato,veggie,0.89,0.75
+white onions,veggie,0.8,0.5
+blackberries,fruit,1.67,0.375
+pineapple,fruit,2.39,4
+green cabbage,veggie,1.73,2.5
+red tomato,fruit,1.01,0.55
+grape tomato,fruit,2.5,0.625
+red cherries,fruit,5.99,1
+corn on cobb,veggie,0.79,0.19
+yellow onions,veggie,3.19,3
+watermelon,fruit,6.99,22
+sweet potato,veggie,1.19,0.25
+cauliflower,veggie,2.89,2
+gala apple,fruit,0.75,0.5
+orange bell pepper,veggie,0.99,0.33
+oatmilk,dairy,4.79,4
+large eggs,meat,2.19,2.8
+2% milk,diary,2.89,8.5
+whole milk,diary,4.49,4
+strawberry milk,diary,1.99,0.875
+lime,fruit,0.69,0.1
+coke,SOF,6.49,9.3
+butter,SOF,3.49,1
+sour cream,dairy,1.49,1
+dorito nacho chips,grain,3.99,0.57
+shredded mozzarella cheese,dairy,3,0.5
+shredded mexican cheese,dairy,2.29,0.5
+shredded parmesan cheese,dairy,4.99,0.375
+shredded chedder cheese,dairy,2.29,0.5
+cream cheese,dairy,2.49,0.5
+navel oranges,fruit,0.79,0.625
+hot dog buns,grain,1.49,0.6875
+lay classic chips,grain,3.29,0.5
+shredded iceberg lettuce,veggie,1.99,0.5
+baby spinach,veggie,3.49,0.3125
+hamburger buns,grain,1.49,0.75
+yellow peaches,fruit,1.15,0.5
+romaine lettuce hearts,veggie,3.99,1.125
+green beans,veggie,1.99,1
+russet potato bag,veggie,2.79,5
+half and half milk,dairy,2.19,2
+cantaloupe,fruit,3.29,3
+english muffins,grain,3.29,0.8125
+sweet corn cobbs pack,veggie,4.99,0.8
+hawaiian rolls,grain,4.19,0.75
+dinner rolls,grain,4.49,0.125
+yellow squash,veggie,0.85,0.5
+apple juice,fruit,1.69,4.1
+heavy whipping cream,dairy,2.29,1
+white mushrooms,veggie,2.39,0.5
+ritz crackers,grain,3.29,0.85
+large mango,fruit,1.25,0.35
+flour tortilla,grain,1.99,1.1
+wheat bread,grain,2.79,1.25
+singles cheese slice,dairy,3.99,1
+green leaf lettuce,veggie,1.99,0.5
+white bread,grain,1.49,1.25
+cheetos,grain,3.99,0.53
+orange juice,fruit,3.99,3
+cottage cheese ,dairy,2.49,1.5
+tortilla chips,grain,3.99,0.625
+plain bagels,grain,4.49,1.5
+vegetable oil,SOF,3.59,3
+nectarines,fruit,1.15,0.5
+cheerios,grain,2.79,0.675
+BBQ chips,grain,3.29,0.48
+pear,fruit,1.24,0.5
+red radish,veggie,1.49,0.5
+orea,SOF,4.29,1.19
+can tomatoe and chilies,veggie,1.25,0.625
+peanut butter,meat,1.25,1
+cheez-it ,grain,3.19,0.775
+chocolate milk,dairy,3.99,8.3
+green peas,veggie,1,0.75
+whole carrots,veggie,2.49,2
+gold potatoes,veggie,3.49,1.5
+bella muchroom,veggie,2.79,0.5
+saltine crackers,grain,1.39,1
+chocolate chip cookies,SOF,3.99,1
+black beans,veggie,1,1
+cinnamon toast crunch,grain,2.79,0.75
+brussel sprouts ,veggie,2.77,1
+blue bell ice cream,dairy,8.49,4
+croissants,grain,3.5,0.575
+can tuna,meat,0.79,0.3125
+evaporated milk,dairy,1.99,0.75
+kiwi,fruit,0.69,0.15
+corn tortilla ,grain,1.99,1.56
+spaghetti noodles,grain,1.33,1
+shredded hashbrowns,grain,1.79,1.875
+little bite muffins,grain,2.74,0.515
+roast beef slices,meat,12.49,0.75
+salami slices,meat,7.99,0.75
+powderd donuts,SOF,2,0.625
+pumpkin pie,SOF,4.99,1.375
+yogurt cups,dairy,0.6,0.375
+pork loin fillet,meat,5.99,0.75
+can kidney beans,veggie,1,0.968
+sliced turkey breast,meat,6.49,1
+eggpjlant,veggie,1.59,1.2
+refried beans,veggie,1.25,1
+baked beans,veggie,2.79,1.75
+french fries,grain,1.79,2
+ground sausage ,meat,5.49,1
+can tomato soup,veggie,1.25,0.671
+ramen noodle soup,grain,4.79,1.68
+red baron pepperoni pizza,grain,4.49,1.25
+mashed potatoes,veggie,1.33,0.25
+texas toast,grain,2.69,0.7
+tater tots,grain,2.99,2
+salad kit for one,veggie,3.33,0.39
+whole chicken,meat,8.2,5.5
+glazed donuts,SOF,3.99,1.875
+pork shoulder butt,meat,14.93,7.465
+pinto beans,veggie,1,0.96
+hummus,grain,3.99,0.625
+salted peanuts,grain,4.49,1
+potato salad,veggie,3.49,1
+rotini pasta,grain,1.79,1
+smoked sausage ,meat,3.49,0.875
+whole pork tenderloin,meat,11.68,2.34
+biscuits,grain,2.49,1.01
+chicken nuggets,meat,6.79,2
+mini pretzels,grain,1.25,0.9375
+black forest ham slices,meat,8.99,1
+spanish rice,grain,1,0.35
+rice pasta blend,grain,1,0.34
+white rice,grain,2.89,0.875
+oats n honey bars,grain,2.79,0.56
+can corn,veggie,1.5,0.95
+rib eye,meat,12.03,0.859
+beef shoulder,meat,29.71,4.25
+beef rack ribs,meat,17.57,3.2
