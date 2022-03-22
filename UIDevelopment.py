@@ -6,23 +6,13 @@ from tkinter import*
 root = Tk()
 
 def Submit():
-    #top = Toplevel()
-    myLabel = Label(root, text="Form has been submitted.Please wait while we process your order", font=(25))
-    Window1off()
-    myLabel.grid(row=12, column=0)
-
-def Window1off():
-    BudgetText.destroy()
-    BudgetInputText.destroy()
-    budgetInput.destroy()
-    ExemptionText.destroy()
-    meatCheck.destroy()
-    vegetableCheck.destroy()
-    fruitCheck.destroy()
-    diaryCheck.destroy()
-    grainCheck.destroy()
-    SubmitButton.destroy()
-    StartingTextEmpty2.destroy()
+    top = Toplevel()
+    root.destroy()
+    StartingText = Label(top, text="Hello and Welcome to our shopping list Application", font=(35))
+    myLabel = Label(top, text="Form has been submitted.Please wait while we process your order", font=(25))
+    StartingText.grid(row=0, column=1)
+    myLabel.grid(row=1, column=0)
+    SaveInputs()
 
 def SaveInputs():# used to update variables
     budgetAmount = budgetInput.get()
@@ -37,11 +27,11 @@ def SaveInputs():# used to update variables
 StartingText = Label(root, text="Hello and Welcome to our shopping list Application", font=(30))
 StartingTextEmpty = Label(root, text="  ")
 StartingTextEmpty2 = Label(root, text="  ")
+StartingTextEmpty3 = Label(root, text="  ")
 
-BudgetText = Label(root, text="Please input a budget amount in the input field without $")
-BudgetInputText = Label(root, text = "PLease enter amount:")
+BudgetText = Label(root, text="Please input a budget amount into the input field below without $")
 budgetInput = Entry()
-budgetInput.insert(0, "0")
+budgetInput.insert(0, "00.00")
 
 
 
@@ -68,7 +58,6 @@ SubmitButton = Button(root, text="Submit your budget", padx=100, command=Submit,
 StartingText.grid(row=0, column=0)
 StartingTextEmpty.grid(row=1, column= 0)
 BudgetText.grid(row=2, column=0)
-#BudgetInputText.grid(row=3, column=0)
 budgetInput.grid(row=3, column=0)
 ExemptionText.grid(row= 4, column=0)
 meatCheck.grid(row= 5, column=0)
@@ -79,6 +68,7 @@ grainCheck.grid(row= 9, column=0)
 StartingTextEmpty2.grid(row=10, column= 0)
 
 SubmitButton.grid(row=11, column=0)
+StartingTextEmpty3.grid(row=12, column=0)
 root.mainloop()
 
 # Press the green button in the gutter to run the script.
