@@ -11,7 +11,7 @@ root = Tk()
 BudgetFrame = Frame(root)
 BudgetFrame.grid(row=0, column=0)
 
-def submit():  # Creates sumbit screen for User Convenience Where you call methods
+def submit():  # Creates submit screen for User Convenience Where you call methods
     saveInputs()
     clear_frame()
     titleName = Label(BudgetFrame, text="Hello and Welcome to our shopping list Application", font=35)
@@ -26,9 +26,9 @@ def submit():  # Creates sumbit screen for User Convenience Where you call metho
 
 
 def saveInputs():  # used to update variables
-    global budgetAmount, MeatOption, veggieOption, fruitOption, diaryOption, grainOption
+    global budgetAmount, meatOption, veggieOption, fruitOption, diaryOption, grainOption
     budgetAmount = budgetInput.get()
-    MeatOption = meat.get()
+    meatOption = meat.get()
     veggieOption = vegetable.get()
     fruitOption = fruit.get()
     diaryOption = diary.get()
@@ -38,12 +38,12 @@ def clear_frame():
     for widgets in BudgetFrame.winfo_children():
         widgets.destroy()
 
-def FinalScreen():  # needs to be contected to algorithm
+def FinalScreen():  # needs to be connected to algorithm
     clear_frame()
     FinalTotal = 'Your Total is: $' + budgetAmount
     shoppinglist = ['chicken breast', '80% lean ground beef', 'cucumber', 'avocado', 'red grape', '2% milk',
                     'english muffins',
-                    'yellow peaches, cheetos', 'pear', 'whole carrots', 'bella muchroom', 'pumpkin pie']
+                    'yellow peaches', 'cheetos', 'pear', 'whole carrots', 'bella muchroom', 'pumpkin pie']
     TitleName = Label(BudgetFrame, text="Hello and Welcome to our shopping list Application", font=35)
     StartingTextEmptyWin3 = Label(BudgetFrame, text="  ")
     TitleName.grid(row=0, column=0)
