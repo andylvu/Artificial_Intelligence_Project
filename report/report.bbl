@@ -21,11 +21,12 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{hamilton_historical_2011}
+\bibitem{mathews_partition_1896}
 \BIBentryALTinterwordspacing
-J.~D. Hamilton, ``Historical {Oil} {Shocks},'' National Bureau of Economic
-  Research, Working {Paper} 16790, Feb. 2011. [Online]. Available:
-  \url{https://www.nber.org/papers/w16790}
+G.~B. Mathews, ``\BIBforeignlanguage{en}{On the {Partition} of {Numbers}},''
+  \emph{\BIBforeignlanguage{en}{Proceedings of the London Mathematical
+  Society}}, vol. s1-28, no.~1, pp. 486--490, Nov. 1896. [Online]. Available:
+  \url{http://doi.wiley.com/10.1112/plms/s1-28.1.486}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}

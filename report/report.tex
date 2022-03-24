@@ -48,20 +48,14 @@
 % The testflow support page is at:
 % http://www.michaelshell.org/tex/testflow/
 
-
 \documentclass[10pt,journal,compsoc]{IEEEtran}
 %
 % If IEEEtran.cls has not been installed into the LaTeX system files,
 % manually specify the path to it like:
 % \documentclass[10pt,journal,compsoc]{../sty/IEEEtran}
 
-
-
-
-
 % Some very useful LaTeX packages include:
 % (uncomment the ones you want to load)
-
 
 % *** MISC UTILITY PACKAGES ***
 %
@@ -80,11 +74,6 @@
 % \ifCLASSINFOpdf conditional that works the same way.
 % When switching from latex to pdflatex and vice-versa, the compiler may
 % have to be run twice to clear warning/error messages.
-
-
-
-
-
 
 % *** CITATION PACKAGES ***
 %
@@ -119,10 +108,6 @@
 % package with the nocompress option which is supported by cite.sty v4.0
 % and later. Note also the use of a CLASSOPTION conditional provided by
 % IEEEtran.cls V1.7 and later.
-
-
-
-
 
 % *** GRAPHICS RELATED PACKAGES ***
 %
@@ -164,11 +149,6 @@
 % You can find documentation about the pdfTeX application at:
 % http://www.tug.org/applications/pdftex
 
-
-
-
-
-
 % *** MATH PACKAGES ***
 %
 %\usepackage{amsmath}
@@ -182,10 +162,6 @@
 % does. amsmath.sty is already installed on most LaTeX systems. The latest
 % version and documentation can be obtained at:
 % http://www.ctan.org/pkg/amsmath
-
-
-
-
 
 % *** SPECIALIZED LIST PACKAGES ***
 %
@@ -204,9 +180,6 @@
 % algorithmicx.sty package by Szasz Janos:
 % http://www.ctan.org/pkg/algorithmicx
 
-
-
-
 % *** ALIGNMENT PACKAGES ***
 %
 %\usepackage{array}
@@ -220,13 +193,9 @@
 % latest version and documentation can be obtained at:
 % http://www.ctan.org/pkg/array
 
-
 % IEEEtran contains the IEEEeqnarray family of commands that can be used to
 % generate multiline equations as well as matrices, tables, etc., of high
 % quality.
-
-
-
 
 % *** SUBFIGURE PACKAGES ***
 %\ifCLASSOPTIONcompsoc
@@ -251,9 +220,6 @@
 % The latest version and documentation of subfig.sty can be obtained at:
 % http://www.ctan.org/pkg/subfig
 
-
-
-
 % *** FLOAT PACKAGES ***
 %
 %\usepackage{fixltx2e}
@@ -270,7 +236,6 @@
 % needed.
 % The latest version and documentation can be found at:
 % http://www.ctan.org/pkg/fixltx2e
-
 
 %\usepackage{stfloats}
 % stfloats.sty was written by Sigitas Tolusis. This package gives LaTeX2e
@@ -297,9 +262,6 @@
 % \usepackage{dblfloatfix}
 % The latest version can be found at:
 % http://www.ctan.org/pkg/dblfloatfix
-
-
-
 
 %\ifCLASSOPTIONcaptionsoff
 %  \usepackage[nomarkers]{endfloat}
@@ -339,9 +301,6 @@
 % later in the document, say, to conditionally put the References on a 
 % page by themselves.
 
-
-
-
 % *** PDF, URL AND HYPERLINK PACKAGES ***
 %
 %\usepackage{url}
@@ -351,20 +310,14 @@
 % http://www.ctan.org/pkg/url
 % Basically, \url{my_url_here}.
 
-
-
-
-
 % *** Do not adjust lengths that control margins, column widths, etc. ***
 % *** Do not use packages that alter fonts (such as pslatex).         ***
 % There should be no need to do such things with IEEEtran.cls V1.6 and later.
 % (Unless specifically asked to do so by the journal or conference you plan
 % to submit to, of course. )
 
-
 % correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
-
 
 \begin{document}
 %
@@ -399,17 +352,17 @@
 % received ..."  text while in non-compsoc journals this is reversed. Sigh.
 
 \author{Andy~Vu,
-    Sam~Hekman,
-    and~Tyler~Sutherland% <-this % stops a space
-    \IEEEcompsocitemizethanks{\IEEEcompsocthanksitem Department
-        Computer Science, Kennesaw State University, Marietta,
-        GA, 1100 South Marietta Pkwy SE 30060. \\
-        git: https://github.com/vespenegas/Artificial\_Intelligence\_Project\protect\\
-        % note need leading \protect in front of \\ to get a newline within \thanks as
-        % \\ is fragile and will error, could use \hfil\break instead.
+  Sam~Hekman,
+  and~Tyler~Sutherland% <-this % stops a space
+  \IEEEcompsocitemizethanks{\IEEEcompsocthanksitem Department
+    Computer Science, Kennesaw State University, Marietta,
+    GA, 1100 South Marietta Pkwy SE 30060. \\
+    git: https://github.com/vespenegas/Artificial\_Intelligence\_Project\protect\\
+    % note need leading \protect in front of \\ to get a newline within \thanks as
+    % \\ is fragile and will error, could use \hfil\break instead.
 
-    }% <-this % stops an unwanted space
-    \thanks{March 28, 2022}}
+  }% <-this % stops an unwanted space
+  \thanks{March 28, 2022}}
 
 % note the % following the last \IEEEmembership and also \thanks - 
 % these prevent an unwanted space from occurring between the last author name
@@ -429,8 +382,6 @@
 % this is a minor point as most people would not even notice if the said evil
 % space somehow managed to creep in.
 
-
-
 % The paper headers
 \markboth{Journal of \LaTeX\ Class Files,~Vol.~14, No.~8, August~2015}%
 {Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for Computer Society Journals}
@@ -441,8 +392,6 @@
 % *** name in the headers of peer review papers.                   ***
 % You can use \ifCLASSOPTIONpeerreview for conditional compilation here if
 % you desire.
-
-
 
 % The publisher's ID mark at the bottom of the page is less important with
 % Computer Society journal papers as those publications place the marks
@@ -458,12 +407,8 @@
 % column for its text to clear the IEEEpubid mark (Computer Society jorunal
 % papers don't need this extra clearance.)
 
-
-
 % use for special paper notices
 %\IEEEspecialpapernotice{(Invited Paper)}
-
-
 
 % for Computer Society papers, we must declare the abstract and index terms
 % PRIOR to the title within the \IEEEtitleabstractindextext IEEEtran
@@ -471,19 +416,18 @@
 % As a general rule, do not put math, special symbols or citations
 % in the abstract or keywords.
 \IEEEtitleabstractindextext{%
-    \begin{abstract}
-        The abstract goes here.
-    \end{abstract}
+  \begin{abstract}
+    The abstract goes here.
+  \end{abstract}
 
-    % Note that keywords are not normally used for peerreview papers.
-    \begin{IEEEkeywords}
-        Computer Society, IEEE, IEEEtran, journal, \LaTeX, paper, template.
-    \end{IEEEkeywords}}
+  % Note that keywords are not normally used for peerreview papers.
+  \begin{IEEEkeywords}
+    Computer Science, Artificial Intelligence, Knapsack, NP Complete, list generation,
+  \end{IEEEkeywords}}
 
 
 % make the title area
 \maketitle
-
 
 % To allow for easy dual compilation without having to reenter the
 % abstract/keywords data, the \IEEEtitleabstractindextext text will
@@ -496,8 +440,6 @@
 % \IEEEdisplaynontitleabstractindextext has no effect when using
 % compsoc or transmag under a non-conference mode.
 
-
-
 % For peer review papers, you can put extra information on the cover
 % page as needed:
 % \ifCLASSOPTIONpeerreview
@@ -508,8 +450,6 @@
 % creates the second title. It will be ignored for other modes.
 \IEEEpeerreviewmaketitle
 
-
-
 \IEEEraisesectionheading{\section{Introduction}\label{sec:introduction}}
 % Computer Society journal (but not conference!) papers do something unusual
 % with the very first section heading (almost always called "Introduction").
@@ -518,9 +458,6 @@
 % \IEEEraisesectionheading{} command. Note the need to keep any \label that
 % is to refer to the section immediately after \section in the above as
 % \IEEEraisesectionheading puts \section within a raised box.
-
-
-
 
 % The very first letter is a 2 line initial drop letter followed
 % by the rest of the first word in caps (small caps for compsoc).
@@ -537,12 +474,63 @@
 % 
 % Here we have the typical use of a "T" for an initial drop letter
 % and "HIS" in caps to complete the first word.
-\IEEEPARstart{T}{his} demo file is intended to serve as a ``starter file''
-for IEEE Computer Society journal papers produced under \LaTeX\ using
-IEEEtran.cls version 1.8b and later.
+\IEEEPARstart{T}{he} knapsack problem is a classic problem that has troubled
+mathematicians for well over a century \cite{mathews_partition_1896}. It can
+be easily be described as given a set of items each with their own weight and
+value, one is to choose items that maximizes the total value while within the
+restraints of the knapsack's weight or other limitations. Depending on the
+application, it is easy to see how widespread this problem can be. Whether it be
+packing bags for a trip on an airline and attempting to not go over the weight
+limit, to a thief stealing the most valuable goods from a store and trying to
+make out with as much money as possible, this problem is difficult to solve.
+
+In a general sense all knapsack problems are similar, there are quite some
+variations to the problem, although the classic 0-1 knapsack problem is probably
+the most common and popular. The 0-1 represents either an item being selected
+(1) or not being selected to put into a bag (0). This means that there is
+only one of each item and that there can be no more than one of that item. To an
+extension, there is the bounded knapsack problem where there are a certain
+amount of duplicates of items and in contrast there is the unbounded knapsack
+problem where there are no bound or limitations of items. In other words there
+are unlimited copies of each item available. In addition to these there is also
+a fractional knapsack. The fractional knapsack allows the ability to pick
+fraction of items instead of an item whole. An example would be selecting ½ of
+an item although in most scenarios this is not possible.
+
+Since this problem is one that has troubled mathematicians for quite some time,
+there are a variety of conventional approaches to the problem. As can be
+imagined, increasing the variables at play allows more complexity to the
+problem. The problem itself is defined as NP complete. In a classic knapsack
+problem the time complexity is O(N*W) where N is the number of items available
+and W denotes the capacity of the knapsack. This time complexity is obtained
+using dynamic programming. Other conventional solutions such as brute force
+results in creating every permutation possible and then selecting the most
+optimal knapsack. This results in a time complexity of O(2\textsuperscript{n}).
+As can be seen, increasing the number of items will cause more options to be
+selected and thus the number of possible combinations increases.The user now has
+more items that they may consider to be selected into the knapsack. On the other
+hand, increasing the allowances of the knapsack results in a similar siutation.
+By allowing a greater number of items into the knaspack, the problem again is an
+increase in the amount of items that are avaiable for selection due to this
+higher limit. Increasing these two variables even or adding a third variable will
+further cause the knapsack problem to be more complicated.
+
+In this paper, we are approaching the knapsack problem from a different
+perspective than conventionally. Firstly, instead of a typical knapsack we are
+generating a grocery list with price being our constraint similar to weight. In
+addition to this, instead of value of an item, the grocery item will be weighed,
+thus more weight of groceries will coincide with a higher value. To add a layer
+of complexity, instead of generating a grocery list to maximize weight and
+budget constraints, there is another dimension to this problem: food group
+recommendations. The objective of this paper is to generate a grocery list from
+a conventional grocery store that satisfies the constraints of a typical
+knapsack however it adds another dimension. Food group recommendations is to
+ensure that the grocery list generated does not select only the most cost
+effective and weighty item but to ensure variety in the optimal list of objects.
+In other words, in this paper, we explore a multidimensional unbounded knapsack
+problem within a grocery store.
 % You must have at least 2 lines in the paragraph with the drop letter
 % (should never be an issue)
-I wish you the best of success.
 
 \hfill
 
@@ -577,7 +565,6 @@ I wish you the best of success.
 % Note that the IEEE typically puts floats only at the top, even when this
 % results in a large percentage of a column being occupied by floats.
 % However, the Computer Society has been known to put floats at the bottom.
-
 
 % An example of a double column floating figure using two subfigures.
 % (The subfig.sty package must be loaded for this to work.)
@@ -635,7 +622,6 @@ I wish you the best of success.
 %\end{tabular}
 %\end{table}
 
-
 % Note that the IEEE does not put floats in the very first column
 % - or typically anywhere on the first page for that matter. Also,
 % in-text middle ("here") positioning is typically not used, but it
@@ -650,7 +636,55 @@ I wish you the best of success.
 related papers
 
 \section{Approach}
-design, logic and reasoning
+For every knapsack problem there must be a list of selectable items with
+appropriate weights, and values associated. Initially, our attempt at creating a
+life like grocery store was to find an appropriate dataset free online. Looking
+through websites such as Kaggle and other databases, there were no suitable
+datasets available. Every dataset lacked food categorization. In our project we
+are attempting to create a grocery shopping list with one of the criteria being
+limitations by food groups. Thus, because of this, all of the available datasets
+did not contain a categorization of the six food groups. This expectation was
+quite low, but the conclusive evidence showed our predictions were correct after
+going through many datasets. Secondly another issue with datasets that grocery
+stores often used was that the items the stores carried were not limited to
+foods. Any walk into a grocery store would show items such as plates, utensils,
+cooking ware and so on. These items are not within the scope of our project. The
+datasets found often had tens of thousands of these items. The last issue with
+using a pre-created dataset was that often there are many overlapping products
+that only differ by brand and price thus also not within the scope of our
+project. An example would be white bread. There are many different brands of
+white bread and thus all of their prices differed depending on brand.
+
+With these issues with available datasets at hand, we formulated our own dataset
+of grocery food items. For our custom dataset, we used the online shopping
+utility available on Kroger.com. From here, we sort by all departments shopping
+and selected grocery food items that are definable within food groups. This
+meaning, items that were complete meals or that combined food groups were
+omitted. Examples of this would be a can of ravioli as there are plentiful
+grains as well as meats within the item. We prioritized items that were
+singularly within one food group such as raw meat, vegetables, or grains. Other
+criteria that is selected is the price, and weight. Of course some items are
+priced by unit instead of by weight thus to solve this issue, a quick google
+search of the average weight was used. An example of this would be an apple that
+Kroger sells for one dollar per apple. We would google the average weight of an
+apple and add it to our database as price and weight. An example of our dataset
+can be seen below in table \ref{table:Example of Groceries Dataset}. After
+nearing 70 pages of Kroger's shopping database, and selecting certain items, as
+of now our database sits at 190 entries. Limitations of brand and size were also
+challenges that we faced. Entry in our database such as white bread, was
+selected as the generic Kroger brand white bread with its associated price and
+weight. All other forms of white bread and brands were omitted as to avoid
+confusion and complexity in our database. As time progresses and if there arises
+a necesity, the dataset will be refined with either the addition or subtraction
+of items.
+
+\begin{table}[h]
+  \setlength\tabcolsep{2pt}
+  \centering
+  \include{assets/example_groceries.tex}
+  \caption{Custom dataset collected from Kroger showing food, food group, price and weight or calcuated weight. This example table is limited to ten selected entires from the dataset.}
+  \label{table:Example of Groceries Dataset}
+\end{table}
 
 \section{Preliminary Results}
 
@@ -661,9 +695,7 @@ What we will implement in the future
 The conclusion goes here.
 
 how in text citation. use refrence.bib file
-asdf \cite{hamilton_historical_2011}
-
-
+asdf \cite{mathews_partition_1896}
 
 % if have a single appendix:
 %\appendix[Proof of the Zonklar Equations]
@@ -685,10 +717,8 @@ asdf \cite{hamilton_historical_2011}
 % Can use something like this to put references on a page
 % by themselves when using endfloat and the captionsoff option.
 \ifCLASSOPTIONcaptionsoff
-    \newpage
+  \newpage
 \fi
-
-
 
 % trigger a \newpage just before the given reference
 % number - used to balance the columns on the last page
@@ -741,8 +771,6 @@ asdf \cite{hamilton_historical_2011}
 % Can be used to pull up biographies so that the bottom of the last one
 % is flush with the other column.
 %\enlargethispage{-5in}
-
-
 
 % that's all folks
 \end{document}

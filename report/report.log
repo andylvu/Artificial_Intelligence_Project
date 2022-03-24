@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.24)  21 MAR 2022 19:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.24)  23 MAR 2022 21:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -111,84 +111,105 @@ Package: cite 2015/02/27  v 5.5
 File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count197
 \l__pdf_internal_box=\box52
-) (./report.aux)
+) (./report.aux (./assets/example_groceries.aux))
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 369.
-LaTeX Font Info:    ... okay on input line 369.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 369.
-LaTeX Font Info:    ... okay on input line 369.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 369.
-LaTeX Font Info:    ... okay on input line 369.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 369.
-LaTeX Font Info:    ... okay on input line 369.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 369.
-LaTeX Font Info:    ... okay on input line 369.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 369.
-LaTeX Font Info:    ... okay on input line 369.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 369.
-LaTeX Font Info:    ... okay on input line 369.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 322.
+LaTeX Font Info:    ... okay on input line 322.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 322.
+LaTeX Font Info:    ... okay on input line 322.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 322.
+LaTeX Font Info:    ... okay on input line 322.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 322.
+LaTeX Font Info:    ... okay on input line 322.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 322.
+LaTeX Font Info:    ... okay on input line 322.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 322.
+LaTeX Font Info:    ... okay on input line 322.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 322.
+LaTeX Font Info:    ... okay on input line 322.
 
 -- Lines per column: 61 (exact).
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 485.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 430.
 (c:/texlive/2021/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
-LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 485.
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 430.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8.03> on input line 485.
+(Font)              <11.04124> on input line 430.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.62097> on input line 485.
+(Font)              <7.72884> on input line 430.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <4.015> on input line 485.
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 485.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <11.04124> on input line 485.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.72884> on input line 485.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.52061> on input line 485.
-LaTeX Font Info:    Trying to load font information for U+pzd on input line 485.
+(Font)              <5.52061> on input line 430.
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 430.
  (c:/texlive/2021/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 485--485
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 430.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8.03> on input line 430.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5.62097> on input line 430.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <4.015> on input line 430.
+
+Underfull \hbox (badness 10000) in paragraph at lines 430--430
 
  []
 
-LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 541.
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 497.
+(c:/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+)
+LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 508.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9.53561> on input line 541.
+(Font)              <9.53561> on input line 508.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6.6749> on input line 541.
+(Font)              <6.6749> on input line 508.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <4.7678> on input line 541.
-(./report.bbl)
-LaTeX Font Info:    Calculating math sizes for size <7.02625> on input line 748.
+(Font)              <4.7678> on input line 508.
+LaTeX Font Info:    Calculating math sizes for size <7.02625> on input line 657.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.02625> on input line 748.
+(Font)              <7.02625> on input line 657.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <4.91833> on input line 748.
+(Font)              <4.91833> on input line 657.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <3.51312> on input line 748.
+(Font)              <3.51312> on input line 657.
  [1{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
+]
+\openout2 = `assets/example_groceries.aux'.
 
-] (./report.aux) ) 
+ (./assets/example_groceries.tex)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./report.bbl
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `en'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `en'. Using the pattern for
+** the default language instead.
+) [2
+
+
+
+] (./report.aux (./assets/example_groceries.aux)) ) 
 Here is how much of TeX's memory you used:
- 1483 strings out of 478599
- 28207 string characters out of 5858101
- 324474 words of memory out of 5000000
- 19399 multiletter control sequences out of 15000+600000
- 445785 words of font info for 108 fonts, out of 8000000 for 9000
+ 1523 strings out of 478599
+ 28990 string characters out of 5858101
+ 334474 words of memory out of 5000000
+ 19427 multiletter control sequences out of 15000+600000
+ 444579 words of font info for 108 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 36i,8n,41p,270b,392s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on report.pdf (1 page, 72359 bytes).
+ 36i,9n,41p,377b,369s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on report.pdf (2 pages, 99499 bytes).
 PDF statistics:
- 39 PDF objects out of 1000 (max. 8388607)
- 23 compressed objects within 1 object stream
+ 52 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
