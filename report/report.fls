@@ -253,12 +253,12 @@ INPUT ./assets/bruteforce_runtime.png
 INPUT assets/bruteforce_runtime.png
 INPUT ./assets/bruteforce_runtime.png
 INPUT ./assets/bruteforce_runtime.png
-INPUT ./report.bbl
-INPUT report.bbl
-INPUT ./report.bbl
-INPUT report.bbl
 INPUT c:/texlive/2021/texmf-dist/fonts/vf/adobe/palatino/pplr7t.vf
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
+INPUT ./report.bbl
+INPUT report.bbl
+INPUT ./report.bbl
+INPUT report.bbl
 INPUT c:/texlive/2021/texmf-dist/fonts/vf/adobe/palatino/pplb7t.vf
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT report.aux

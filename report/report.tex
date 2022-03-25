@@ -724,7 +724,41 @@ data can be seen plotted in figure \ref{fig:bruteforce_timecomplexity.png}.
 \end{figure}
 
 \section{Discussion and Future Works}
+As of the writing of this paper and this middle update, two base line
+conventional algorithms have been developed for the project: brute force and
+dynamic programming. These two methods are tried and true however their
+limitations in time complexity as well as being resource dependent show that their
+usage is limited. For datasets that are small as seen in the tables in the
+preliminary results section, they have satisfactory performance, however, for
+larger datasets they are not optimal and are not ideal. For this reason, we are
+currently implementing a heuristic and nonconventional algorithm. 
 
+Genetic algorithms: {write about them here, using sources and citation}
+
+In addition to this, we are facing design issues with our project
+implementation. As can be seen in our brute force and dynamic programming we are
+utilizing these algorithms as 0-1 knapsacks without consideration of food groups
+which was a third dimension in our original design. The reason for this is that
+a conventional grocery store would behave as an unbounded knapsack. Of course
+there are not infinite amounts of inventory, however, the grocery store
+inventory is substantial enough that to a typical shopper, it would not be
+feasible to empty the stock of a certain item. 
+
+With this being said, designing the knapsack as unbounded would result in less
+choices that the algorithm would choose. It would simply pick an item that
+resulted in the maximum weight to price ratio and then select that item until
+the budget is met. An example would be selecting water melons which on average
+weight roughly 25 pounds. In the custom groceries dataset, watermelon is listed
+as 22 pounds with a price of 6.99. It would be too trivial for the algorithm to
+select watermelons until whatever budget is met thus resulting in the most
+efficient shopping cart. Introducing our assigned ratios of food groups would
+simply extend this issue. By forcing the algorithm to select a certain ratio of
+grains, meats, and dairy and so on, it would select items on a similar premise.
+For fruit, it would only select watermelons, for meats it would select an item
+that has the most efficient weight to price item as well. These would repeat
+until the budget is met and all food groups are to be accounted for. With that
+being said, there are some design choices that need to be made and reconsidered
+for the future of this endeavor. 
 
 \section{Conclusion}
 The conclusion goes here.
