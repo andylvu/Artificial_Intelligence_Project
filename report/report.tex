@@ -81,9 +81,11 @@
   % IEEE Computer Society needs nocompress option
   % requires cite.sty v4.0 or later (November 2003)
   \usepackage[nocompress]{cite}
+  \usepackage{graphicx}
 \else
   % normal IEEE
-  \usepackage{cite}
+  \usepackage{cite}.
+  
 \fi
 % cite.sty was written by Donald Arseneau
 % V1.6 and later of IEEEtran pre-defines the format of the cite.sty package
@@ -352,17 +354,17 @@
 % received ..."  text while in non-compsoc journals this is reversed. Sigh.
 
 \author{Andy~Vu,
-  Sam~Hekman,
-  and~Tyler~Sutherland% <-this % stops a space
-  \IEEEcompsocitemizethanks{\IEEEcompsocthanksitem Department
-    Computer Science, Kennesaw State University, Marietta,
-    GA, 1100 South Marietta Pkwy SE 30060. \\
-    git: https://github.com/vespenegas/Artificial\_Intelligence\_Project\protect\\
-    % note need leading \protect in front of \\ to get a newline within \thanks as
-    % \\ is fragile and will error, could use \hfil\break instead.
+    Sam~Hekman,
+    and~Tyler~Sutherland% <-this % stops a space
+    \IEEEcompsocitemizethanks{\IEEEcompsocthanksitem Department
+        Computer Science, Kennesaw State University, Marietta,
+        GA, 1100 South Marietta Pkwy SE 30060. \\
+        git: https://github.com/vespenegas/Artificial\_Intelligence\_Project\protect\\
+        % note need leading \protect in front of \\ to get a newline within \thanks as
+        % \\ is fragile and will error, could use \hfil\break instead.
 
-  }% <-this % stops an unwanted space
-  \thanks{March 28, 2022}}
+    }% <-this % stops an unwanted space
+    \thanks{March 28, 2022}}
 
 % note the % following the last \IEEEmembership and also \thanks - 
 % these prevent an unwanted space from occurring between the last author name
@@ -416,14 +418,14 @@
 % As a general rule, do not put math, special symbols or citations
 % in the abstract or keywords.
 \IEEEtitleabstractindextext{%
-  \begin{abstract}
-    The abstract goes here.
-  \end{abstract}
+    \begin{abstract}
+        The abstract goes here.
+    \end{abstract}
 
-  % Note that keywords are not normally used for peerreview papers.
-  \begin{IEEEkeywords}
-    Computer Science, Artificial Intelligence, Knapsack, NP Complete, list generation,
-  \end{IEEEkeywords}}
+    % Note that keywords are not normally used for peerreview papers.
+    \begin{IEEEkeywords}
+        Computer Science, Artificial Intelligence, Knapsack, NP Complete, list generation,
+    \end{IEEEkeywords}}
 
 
 % make the title area
@@ -532,6 +534,8 @@ problem within a grocery store.
 % You must have at least 2 lines in the paragraph with the drop letter
 % (should never be an issue)
 
+\newpage
+
 \hfill
 
 \hfill March 28, 2022
@@ -632,9 +636,6 @@ problem within a grocery store.
 % footnotes above bottom floats. This can be corrected via the
 % \fnbelowfloat command of the stfloats package.
 
-\section{Related Works}
-related papers
-
 \section{Approach}
 For every knapsack problem there must be a list of selectable items with
 appropriate weights, and values associated. Initially, our attempt at creating a
@@ -678,18 +679,52 @@ confusion and complexity in our database. As time progresses and if there arises
 a necesity, the dataset will be refined with either the addition or subtraction
 of items.
 
+
 \begin{table}[h]
-  \setlength\tabcolsep{2pt}
-  \centering
-  \include{assets/example_groceries.tex}
-  \caption{Custom dataset collected from Kroger showing food, food group, price and weight or calcuated weight. This example table is limited to ten selected entires from the dataset.}
-  \label{table:Example of Groceries Dataset}
+    \setlength\tabcolsep{2pt}
+    \centering
+    \include{assets/example_groceries.tex}
+    \caption{Custom dataset collected from Kroger showing food, food group, price and weight or calculated weight. This example table is limited to ten selected entires from the dataset.}
+    \label{table:Example of Groceries Dataset}
 \end{table}
 
+
+
+
 \section{Preliminary Results}
+To serve as a baseline, we have implemented a brute force algorithm that works
+on our dataset to select items that results in the heaviest shopping cart while
+staying under budget. From the runtimes, it is clear that brute force is
+extremely slow. We truncate our grocery dataset to collect runtimes with a
+budget of 100 dollars. Initially with a list length of 10 items, the run time is
+relatively quick at 0.0015 seconds. However, this exponential increase in time
+complexity is seen once the grocery list is increased. 20 items results in a run
+time of 1.57 seconds and then finally 28 items results in a runtime of 531
+seconds. Any larger list of items were not included due to the time complexity
+clearly showing exponential growth. In addition to this, attempts at 30 item
+list length result in run times far too long and hence we decided to stop at 28
+items. The data for these run times can be seen in table
+\ref{table:bruteforce_results.tex}. In addition to this, the runtime chart and
+data can be seen plotted in figure \ref{fig:bruteforce_timecomplexity.png}.
+
+\begin{table}[h]
+    \setlength\tabcolsep{2pt}
+    \centering
+    \include{assets/bruteforce_results.tex}
+    \caption{Runtime data for brute force algorithm with a truncated dataset. Dataset with more than 28 items were resulting in extremely long runtimes.}
+    \label{table:bruteforce_results.tex}
+\end{table}
+
+\begin{figure}[h]
+    \centering
+    \textbf{Brute Force Runtime Chart}
+    \includegraphics[width=\columnwidth]{assets/bruteforce_runtime.png}
+    \caption{Plotted runtime chart for the brute force algorithm}
+    \label{fig:bruteforce_timecomplexity.png}
+\end{figure}
 
 \section{Discussion and Future Works}
-What we will implement in the future
+
 
 \section{Conclusion}
 The conclusion goes here.
@@ -717,7 +752,7 @@ asdf \cite{mathews_partition_1896}
 % Can use something like this to put references on a page
 % by themselves when using endfloat and the captionsoff option.
 \ifCLASSOPTIONcaptionsoff
-  \newpage
+    \newpage
 \fi
 
 % trigger a \newpage just before the given reference
