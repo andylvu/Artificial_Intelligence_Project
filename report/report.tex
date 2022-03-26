@@ -419,13 +419,28 @@
 % in the abstract or keywords.
 \IEEEtitleabstractindextext{%
     \begin{abstract}
-        The abstract goes here.
+        This paper is to present the current progress of our optimal grocery list
+        generator. The nature of our problem causes it to identify as a
+        multidimensional knapsack problem. With this in mind we have devised
+        approaches to solve the knapsack problem. We have developed a custom dataset
+        that allows easily manipulated able data values that coincide with our
+        specific needs. On top of this we have developed two solutions: a brute
+        force approach as well as a dynamic programming approach. With our initial
+        preliminary testing, results show that our brute force approach is showing
+        typical performance of a brute force method having difficulty once the
+        dataset becomes of an impractical size. The dynamic programming approach
+        shows a more promising result when comparing time complexity with it able to
+        complete calculations with the entirety of our dataset. With these baselines
+        covered, our future goals is to implement a genetic algorithm that can
+        processes the problem much more easily combined with our user interface that
+        can handle the problem as a whole including food group considerations.
     \end{abstract}
 
     % Note that keywords are not normally used for peerreview papers.
     \begin{IEEEkeywords}
-        Computer Science, Artificial Intelligence, Knapsack, NP Complete, list generation,
-    \end{IEEEkeywords}}
+        Computer Science, Artificial Intelligence, Knapsack, NP Complete, List
+        generation, Dynamic programming, Bruteforce, Exhaustive search, Genetic
+        algorithms, Heuristic algorithms \end{IEEEkeywords}}
 
 
 % make the title area
@@ -509,13 +524,14 @@ using dynamic programming. Other conventional solutions such as brute force
 results in creating every permutation possible and then selecting the most
 optimal knapsack. This results in a time complexity of O(2\textsuperscript{n}).
 As can be seen, increasing the number of items will cause more options to be
-selected and thus the number of possible combinations increases.The user now has
-more items that they may consider to be selected into the knapsack. On the other
-hand, increasing the allowances of the knapsack results in a similar siutation.
-By allowing a greater number of items into the knaspack, the problem again is an
-increase in the amount of items that are avaiable for selection due to this
-higher limit. Increasing these two variables even or adding a third variable will
-further cause the knapsack problem to be more complicated.
+selected and thus the number of possible combinations increases. The user now
+has more items that they may consider to be selected into the knapsack. On the
+other hand, increasing the allowances of the knapsack results in a similar
+siutation. By allowing a greater number of items into the knaspack, the problem
+again is an increase in the amount of items that are avaiable for selection due
+to this higher limit, thus increasing the dimensionality
+\cite{caserta_robust_2019}. Increasing these two variables even or adding a
+third variable will further cause the knapsack problem to be more complicated.
 
 In this paper, we are approaching the knapsack problem from a different
 perspective than conventionally. Firstly, instead of a typical knapsack we are
@@ -530,11 +546,10 @@ knapsack however it adds another dimension. Food group recommendations is to
 ensure that the grocery list generated does not select only the most cost
 effective and weighty item but to ensure variety in the optimal list of objects.
 In other words, in this paper, we explore a multidimensional unbounded knapsack
-problem within a grocery store.
+problem within a grocery store \cite{agha_binary_2021}.
 % You must have at least 2 lines in the paragraph with the drop letter
 % (should never be an issue)
 
-\newpage
 
 \hfill
 
@@ -679,7 +694,6 @@ confusion and complexity in our database. As time progresses and if there arises
 a necesity, the dataset will be refined with either the addition or subtraction
 of items.
 
-
 \begin{table}[h]
     \setlength\tabcolsep{2pt}
     \centering
@@ -688,8 +702,68 @@ of items.
     \label{table:Example of Groceries Dataset}
 \end{table}
 
+For baseline comparisons to the proposed model, we have implemented both a brute
+force method and a dynamic programming method to tackle the knapsack. As
+discussed further in the discussion sections, the current algorithms are set to
+work as conventional 0-1 knapsacks disregarding food group criteria. These two
+baseline algorithms serve to demonstrate the time complexity and usability in
+comparison to the genetic algorithm that will be implemented in the future. Both
+the brute force and dynamic programing methods take in the budget as a
+constraint, using weights as the value to maximize and considers items by their
+price. The brute force algorithm uses itertools combination method to create a
+list of all possible combinations within the budget constrain, and then chooses
+the maximum value and list that composes of that combination.
 
+Using dynamic programming for our algorithm, we intended to use a top-down
+memoization approach to compute subproblems for the price limit and weight
+maximization. This approach works by building a table based on the number of
+items in the dataset by the limit in integers. For example, if the dataset has
+200 items and the price limit is 100, then the table will have a shape of
+200X100. Each index stores the datapoint of an item, or combination of items,
+that yields the maximum possible weight at the current cost. The algorithm then
+traverses the array to find the index with the highest weight yield at the
+maximum price limit. Each datapoint in this index is added to a results list
+that is returned to the user. Just as with the brute force approach, this
+algorithm is subject to being a 0-1 knapsack. Any result using memoization
+returns a list filled entirely with the single best price-to-weight ratio. This
+is not ideal nor realistic for a practical grocery list.
 
+A limitation of the memoization approach is how the price is handled by the
+memo table. The table requires an index in the form of a whole number integer
+and is incremented by a value of one. This gives two options: either generate
+the table cent-wise or limit the price and price limit to whole dollars. The
+first option results in a major increase in the table size as the 200X100 table
+mentioned above would become a 200X10,000 table. This would be fine for a small
+dataset but would be expensive to compute and store given a super-market sized
+dataset of items. The second option allows for a comparably small table but
+gives results that do not reflect the actual value of the items in the list due
+to rounding. We also realized that maintaining weight ratios between the
+different food categories using memoization would prove more difficult than
+anticipated. While there are approaches to the multi-dimensional knapsack
+problem using memoization, none explored adequately allowed for this ratio
+problem to be solved. We speculated that we could use a table that is three
+dimensional. This would be n*m*k, where n is the number of items in the dataset,
+m is the price limit, and k is the number of food groups. Each index would
+maintain an approximate ratio of the food groups as set by the user. However, we
+were unsure on how to make this operate as intended.
+
+Lastly we have developed a userinterface (UI) system that allows our program
+ease of use. An example of it can be seen in figure \ref{fig:UI3}. We decided to
+create a GUI system using Tkinter, an import within pythons' built-in library,
+for our algorithm to help users interact with the system more easily. Using its
+different widgets such as Labels to display text, input areas to allow the user
+to input their desired budget amount, check boxes to enable or disable certain
+food groups and lastly a button to submit the users order. Also we used
+different windows to allow us to create an easy operating experience for the
+user.
+
+\begin{figure}[h]
+    \centering
+    \textbf{Example User Interface}
+    \includegraphics[width=\columnwidth]{assets/AIprojectUI3.JPG}
+    \caption{Example userinterface allow the user to select food restrictions as well as inputting budget}
+    \label{fig:UI3}
+\end{figure}
 
 \section{Preliminary Results}
 To serve as a baseline, we have implemented a brute force algorithm that works
@@ -723,26 +797,66 @@ data can be seen plotted in figure \ref{fig:bruteforce_timecomplexity.png}.
     \label{fig:bruteforce_timecomplexity.png}
 \end{figure}
 
+Testing using the memoization technique with the dynamic programming showed a
+linear increase in computation time versus the brute force technique, with a
+growth order of O(n*m) where n is the number of items in the dataset and m is
+the price limit of the grocery list. As can be seen in figure
+\ref{fig:dynamic_timecomplexity.png} the run time is much quicker compared to
+the brute force. In addition to this, it was able to clear the entire data set
+while the brute force was not. This can be seen more more clearly in table
+\ref{table:dynamic_runtimes.tex}. For comparison, the bruteforce runtime for a
+list of 20 items was 1.57 seconds while the dynamic programming took 0.000997
+for the same list length. This is a much more rapid solution.
+
+\begin{table}[h]
+    \setlength\tabcolsep{2pt}
+    \centering
+    \include{assets/dynamic_runtime.tex}
+    \caption{Dynamic programming runtimes of custom dataset}
+    \label{table:dynamic_runtimes.tex}
+\end{table}
+
+\begin{figure}[h]
+    \centering
+    \textbf{Dynamic Programming Runtime Chart}
+    \includegraphics[width=\columnwidth]{assets/dynamic_runtime.png}
+    \caption{Plotted runtime chart for the dynamic programming algorithm}
+    \label{fig:dynamic_timecomplexity.png}
+\end{figure}
+
 \section{Discussion and Future Works}
 As of the writing of this paper and this middle update, two base line
 conventional algorithms have been developed for the project: brute force and
 dynamic programming. These two methods are tried and true however their
-limitations in time complexity as well as being resource dependent show that their
-usage is limited. For datasets that are small as seen in the tables in the
+limitations in time complexity as well as being resource dependent show that
+their usage is limited. For datasets that are small as seen in the tables in the
 preliminary results section, they have satisfactory performance, however, for
 larger datasets they are not optimal and are not ideal. For this reason, we are
-currently implementing a heuristic and nonconventional algorithm. 
+currently implementing a heuristic and nonconventional algorithm while
+considering other unconventional methods\cite{nomer_neural_2020} \cite{mansi_hybrid_2013}.
 
-Genetic algorithms: {write about them here, using sources and citation}
+We have since switched to developing an algorithm using the genetic algorithm
+approach \cite{djannaty_hybrid_2008}. Because the data is not well suited to
+memoization, the genetic approach of selecting 'fitness' of data points could
+prove to be a better fit. Genetic algorithms rely on randomization of selected
+items for a specific subset size and compares the values of each item. These
+subsets are stored as 'chromosomes', typically as a binary encoding, that have a
+length of the number of items. Using a fitness function, we can find the best
+chromosome in the subsets to fill the knapsack. Each encoded 1 in the chromosome
+corresponds to a specific item that is added to the knapsack while the 0 items
+are not added. Unlike memoization, this allows for us to consider the cent
+amounts in the price of each item and to potentially find the optimal solution
+for the food group ratios without the need for increasing the dimensionality by
+the number of groups.
 
 In addition to this, we are facing design issues with our project
 implementation. As can be seen in our brute force and dynamic programming we are
 utilizing these algorithms as 0-1 knapsacks without consideration of food groups
 which was a third dimension in our original design. The reason for this is that
 a conventional grocery store would behave as an unbounded knapsack. Of course
-there are not infinite amounts of inventory, however, the grocery store
+there are not infinite amounts of inventory, however, a typical grocery store
 inventory is substantial enough that to a typical shopper, it would not be
-feasible to empty the stock of a certain item. 
+feasible to empty the stock of a certain item.
 
 With this being said, designing the knapsack as unbounded would result in less
 choices that the algorithm would choose. It would simply pick an item that
@@ -758,13 +872,19 @@ For fruit, it would only select watermelons, for meats it would select an item
 that has the most efficient weight to price item as well. These would repeat
 until the budget is met and all food groups are to be accounted for. With that
 being said, there are some design choices that need to be made and reconsidered
-for the future of this endeavor. 
+for the future of this endeavor.
 
 \section{Conclusion}
-The conclusion goes here.
+Our implementation of brute force to approach the knapsack problem aligns with
+conventional train of thought. Run times were incredible slow especially as the
+size of the dataset increases resulting in an exponential time complexity
+growth. In addition to this, our dynamic programming, approach also matches what
+can be found with literature. Dynamic programming allows a much more rapid
+solution to the knapsack in comparison to the brute force algorithm. With these
+two we have developed a UI system for ease of use however, in the future we are
+planning to implement a genetic algorithm that can surpass even the time
+complexity of dynamic programming.
 
-how in text citation. use refrence.bib file
-asdf \cite{mathews_partition_1896}
 
 % if have a single appendix:
 %\appendix[Proof of the Zonklar Equations]

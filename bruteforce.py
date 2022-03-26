@@ -26,7 +26,7 @@ def totalvalue(comb):
 
 items = df1.values.tolist()
 # k = size of list desired
-k = 21
+k = 15
 n = len(items)
 for i in range(0, n - k):
     items.pop()
