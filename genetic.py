@@ -141,12 +141,47 @@ def zip_arrays(population, parents, offspring):
     
     return new_population
 
+
+'''
+Generates an initial population based on the percentage of threshold/sum of all costs.
+This allows for scaling for very low or veryhigh thresholds
+If the threshold is too low, the population will never generate a specimen that is below threshold.
+This addresses that issue.
+E.g., if threshold is 5% of total costs, ~5% of items will be in the specimens.
+
+Works similar to the induce_mutation function
+'''
+def initial_population_generation(population_size, produce, costs, threshold):
+    
+    # Get the pecentage of items that should be in the specimens
+    max_total_cost = int(np.ceil(np.sum(costs)))
+    threshold_percentage = threshold/max_total_cost
+    
+    # build initial pop as zeros
+    initial_population = np.zeros(shape=(population_size, len(produce))).astype(int)
+    
+    # Declare RNG
+    random_gen = np.random.default_rng()
+    
+    # Iterage over all specimens
+    for i in range(len(initial_population)):
+        
+        # Generage percentages that the item at this index will be included
+        inclusion_chance = random_gen.random((len(initial_population[0])))
+        
+        # Flip 0 to 1 where the inclusion chance is below the threshold percentage
+        initial_population[i, inclusion_chance <= threshold_percentage] = 1
+    
+    return initial_population
+
+
 '''
 function for rounding total price up to two decimal points
 '''
 def round_up_2_decimals(a):
     return np.round(a + 0.5 * 10**(-2), 2)
-    
+ 
+   
 '''
 main function
 '''
@@ -173,10 +208,10 @@ values = items['weight (lbs)'].to_numpy().astype('float64')
 
 threshold = 35
 
-population_size = 8
+population_size = 16
     # Create initial population, each individual specimen is binary encoded
     # Encoding is if item at that index is included in the specimen
-initial_population = np.random.randint(2, size=(population_size, len(produce)))
+initial_population = initial_population_generation(population_size, produce, costs, threshold)
 generations = 50
 
 output = genetic_main(initial_population, costs, values, threshold, population_size, generations)
