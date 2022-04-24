@@ -1,5 +1,5 @@
 import numpy as np
-
+import pandas as pd
 
 '''
 "fitness" calculates the fitness of the speciments in the population.
@@ -50,7 +50,7 @@ The two offspring's inhereted genes are not the same, as they are taken from opp
 Parents are mated in decending order, if there are 4 parents, there will be 4 offspring, 2 to each pair.
 This returns a new array of offspring
 
-If the number of parents is odd, the last parent will produce a single offspring with the most fit parent
+If the number of parents is odd, the last parent will produce a single offspring with the most fit parent.
 
 '''
 def cross_breeding(parents):
@@ -140,7 +140,12 @@ def zip_arrays(population, parents, offspring):
     new_population[half:] = offspring
     
     return new_population
-    
+
+'''
+function for rounding total price up to two decimal points
+'''
+def round_up_2_decimals(a):
+    return np.round(a + 0.5 * 10**(-2), 2)
     
 '''
 main function
@@ -156,21 +161,32 @@ def genetic_main(initial_population, costs, values, threshold, population_size, 
     final_gen_fitnesses = fitness(current_population, values, costs, threshold)
     
     return current_population[np.argmax(final_gen_fitnesses)]    
-    
 
 
+# Import csv as dataframe
+items = pd.read_csv("groceries.csv")
 
+# Get numpy arrays from each of the columns
+produce = items['Food'].to_numpy().astype('str')
+costs = items['Price'].to_numpy().astype('float64')
+values = items['weight (lbs)'].to_numpy().astype('float64')
 
-
-
-items = np.arange(1,11)
-costs = np.array([7,8,9,15,1,3,2,11,13,4])
-values = np.array([100,20,15,85,90,70,40,20,30,60])
 threshold = 35
+
 population_size = 8
     # Create initial population, each individual specimen is binary encoded
     # Encoding is if item at that index is included in the specimen
-initial_population = np.random.randint(2, size=(population_size, len(items)))
+initial_population = np.random.randint(2, size=(population_size, len(produce)))
 generations = 50
 
-print(genetic_main(initial_population, costs, values, threshold, population_size, generations))
+output = genetic_main(initial_population, costs, values, threshold, population_size, generations)
+
+# Print list of produce that has been selected
+print(produce[output == 1])
+
+# Print total price
+print(round_up_2_decimals(np.sum(costs[output == 1])))
+
+# Print total value of the list
+print(np.sum(values[output == 1]))
+
