@@ -247,11 +247,13 @@ INPUT ./assets/example_groceries.tex
 INPUT assets/example_groceries.tex
 INPUT c:/texlive/2022/texmf-dist/fonts/vf/adobe/palatino/pplr7t.vf
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
-INPUT ./assets/AIprojectUI3.JPG
-INPUT ./assets/AIprojectUI3.JPG
-INPUT assets/AIprojectUI3.JPG
-INPUT ./assets/AIprojectUI3.JPG
-INPUT ./assets/AIprojectUI3.JPG
+INPUT ./assets/finalVersionUI3.JPG
+INPUT ./assets/finalVersionUI3.JPG
+INPUT assets/finalVersionUI3.JPG
+INPUT ./assets/finalVersionUI3.JPG
+INPUT ./assets/finalVersionUI3.JPG
+INPUT c:/texlive/2022/texmf-dist/fonts/vf/adobe/palatino/pplb7t.vf
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT ./assets/bruteforce_results.tex
 OUTPUT assets/bruteforce_results.aux
 INPUT ./assets/bruteforce_results.tex
@@ -261,8 +263,6 @@ INPUT ./assets/bruteforce_results.tex
 INPUT assets/bruteforce_results.tex
 INPUT ./assets/bruteforce_results.tex
 INPUT assets/bruteforce_results.tex
-INPUT c:/texlive/2022/texmf-dist/fonts/vf/adobe/palatino/pplb7t.vf
-INPUT c:/texlive/2022/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT ./assets/bruteforce_runtime.png
 INPUT ./assets/bruteforce_runtime.png
 INPUT assets/bruteforce_runtime.png
