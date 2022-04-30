@@ -419,21 +419,28 @@
 % in the abstract or keywords.
 \IEEEtitleabstractindextext{%
     \begin{abstract}
-        This paper is to present the current progress of our optimal grocery list
-        generator. The nature of our problem causes it to identify as a
-        multidimensional knapsack problem. With this in mind we have devised
-        approaches to solve the knapsack problem. We have developed a custom dataset
-        that allows easily manipulatable data values that coincide with our
-        specific needs. On top of this we have developed two solutions: a brute
-        force approach as well as a dynamic programming approach. With our initial
-        preliminary testing, results show that our brute force approach is showing
-        typical performance of a brute force method having difficulty once the
-        dataset becomes of an impractical size. The dynamic programming approach
-        shows a more promising result when comparing time complexity, with it able to
-        complete calculations with the entirety of our dataset. With these baselines
-        covered, our future goals is to implement a genetic algorithm that can
-        process the problem much more easily, combined with our user interface that
-        can handle the problem as a whole including food group considerations.
+        Developing an optimal grocery list based on budget and food group
+        restraints causes the nature of the problem to identify as a
+        multidimensional knapsack problem. The knapsack problem has been around
+        for a longtime and still continues to cause mathematicians to struggle.
+        There have been a multitude of conventional and well developed
+        approaches to the knapsack problem as well as novel ideas. In this
+        paper, we explore the prospects of solving the knapsack problem using a
+        genetic algorithm. Although not entirely novel, we propose and explore
+        the idea to introduce another dimension of food groups to add complexity
+        to the knapsack. With this in mind we have devised a brute force and
+        dynamic programming solutions to solve the knapsack problem alongside a
+        custom generated dataset to serve as baselines to the genetic algorithm.
+        The results show that conventional approaches such as brute force and
+        dynamic programming work so long as the input size of the dataset is
+        small but genetic algorithms work much more efficiently if there is a
+        large enough dataset. Although not in the case of our implementation due
+        to the small dataset our genetic algorithm was ten times slower than the
+        dynamic programming but offered a much larger diversity in its output
+        solutions. The idea of a multidimensional knapsack including food groups
+        was found to be far too simple to even be bothered to implement and that
+        datasets and grocery store design is much more simple and complex than
+        perceived to be. 
     \end{abstract}
 
     % Note that keywords are not normally used for peerreview papers.
@@ -492,8 +499,8 @@
 % Here we have the typical use of a "T" for an initial drop letter
 % and "HIS" in caps to complete the first word.
 \IEEEPARstart{T}{he} knapsack problem is a classic problem that has troubled
-mathematicians for well over a century \cite{mathews_partition_1896}. It can
-be easily be described as given a set of items each with their own weight and
+mathematicians for well over a century \cite{mathews_partition_1896}. It can be
+easily be described as given a set of items each with their own weight and
 value, one is to choose items that maximizes the total value while within the
 restraints of the knapsack's weight or other limitations. Depending on the
 application, it is easy to see how widespread this problem can be. Whether it be
@@ -504,13 +511,13 @@ make out with as much money as possible, this problem is difficult to solve.
 In a general sense all knapsack problems are similar, there are quite some
 variations to the problem, although the classic 0-1 knapsack problem is probably
 the most common and popular. The 0-1 represents either an item being selected
-(1) or not being selected to put into a bag (0). This means that there is
-only one of each item and that there can be no more than one of that item. To an
-extension, there is the bounded knapsack problem where there are a certain
-amount of duplicates of items and in contrast there is the unbounded knapsack
-problem where there are no bound or limitations of items. In other words there
-are unlimited copies of each item available. In addition to these there is also
-a fractional knapsack. The fractional knapsack allows the ability to pick
+(1) or not being selected to put into a bag (0). This means that there is only
+one of each item and that there can be no more than one of that item. To an
+extent, there is the bounded knapsack problem where there are a certain number
+of duplicates of items and in contrast there is the unbounded knapsack problem
+where there are no bounds or limitations of items. In other words there are
+unlimited copies of each item available. In addition to these there is also a
+fractional knapsack. The fractional knapsack allows the ability to pick a
 fraction of items instead of an item whole. An example would be selecting ½ of
 an item although in most scenarios this is not possible.
 
@@ -527,26 +534,28 @@ As can be seen, increasing the number of items will cause more options to be
 selected and thus the number of possible combinations increases. The user now
 has more items that they may consider to be selected into the knapsack. On the
 other hand, increasing the allowances of the knapsack results in a similar
-siutation. By allowing a greater number of items into the knaspack, the problem
-again is an increase in the amount of items that are avaiable for selection due
-to this higher limit, thus increasing the dimensionality
-\cite{caserta_robust_2019}. Increasing these two variables even or adding a
-third variable will further cause the knapsack problem to be more complicated.
+situation. By allowing a greater number of items into the knapsack, the problem
+again is an increase in the amount of items that are available for selection due
+to this higher limit, thus increasing the dimensionality. Increasing these two
+variables even or adding a third variable will further cause the knapsack
+problem to be more complicated.
+
 
 In this paper, we are approaching the knapsack problem from a different
 perspective than conventionally. Firstly, instead of a typical knapsack we are
 generating a grocery list with price being our constraint similar to weight. In
-addition to this, instead of value of an item, the grocery item will be weighed,
-thus more weight of groceries will coincide with a higher value. To add a layer
-of complexity, instead of generating a grocery list to maximize weight and
-budget constraints, there is another dimension to this problem: food group
+addition to this, instead of the value of an item, the grocery item will be
+weighed, thus more weight of groceries will coincide with a higher value. To add
+a layer of complexity, instead of generating a grocery list to maximize weight
+and budget constraints, there is another dimension to this problem: food group
 recommendations. The objective of this paper is to generate a grocery list from
 a conventional grocery store that satisfies the constraints of a typical
-knapsack however it adds another dimension. Food group recommendations is to
+knapsack; however it adds another dimension. Food group recommendations is to
 ensure that the grocery list generated does not select only the most cost
 effective and weighty item but to ensure variety in the optimal list of objects.
 In other words, in this paper, we explore a multidimensional unbounded knapsack
 problem within a grocery store \cite{agha_binary_2021}.
+
 % You must have at least 2 lines in the paragraph with the drop letter
 % (should never be an issue)
 
@@ -654,45 +663,47 @@ problem within a grocery store \cite{agha_binary_2021}.
 \section{Approach}
 For every knapsack problem there must be a list of selectable items with
 appropriate weights, and values associated. Initially, our attempt at creating a
-life like grocery store was to find an appropriate dataset free online. Looking
-through websites such as Kaggle and other databases, there were no suitable
-datasets available. Every dataset lacked food categorization. In our project we
-are attempting to create a grocery shopping list with one of the criteria being
-limitations by food groups. Thus, because of this, all of the available datasets
-did not contain a categorization of the six food groups. This expectation was
-quite low, but the conclusive evidence showed our predictions were correct after
-going through many datasets. Secondly another issue with datasets that grocery
-stores often used was that the items the stores carried were not limited to
-foods. Any walk into a grocery store would show items such as plates, utensils,
-cooking ware and so on. These items are not within the scope of our project. The
-datasets found often had tens of thousands of these items. The last issue with
-using a pre-created dataset was that often there are many overlapping products
-that only differ by brand and price thus also not within the scope of our
-project. An example would be white bread. There are many different brands of
-white bread and thus all of their prices differed depending on brand.
+life like a grocery store was to find an appropriate dataset free online.
+Looking through websites such as Kaggle and other databases, there were no
+suitable datasets available. Every dataset lacked food categorization. In our
+project we attempt to create a grocery shopping list with one of the criteria
+being limitations by food groups. Thus, because of this, all of the available
+datasets did not contain a categorization of the six food groups. This
+expectation was quite low, but the conclusive evidence showed our predictions
+were correct after going through many datasets. Secondly another issue with
+datasets that grocery stores often used was that the items the stores carried
+were not limited to foods. Any walk into a grocery store would show items such
+as plates, utensils, cooking ware and so on. These items are not within the
+scope of our project. The datasets found often had tens of thousands of these
+items. The last issue with using a pre-created dataset was that often there are
+many overlapping products that only differ by brand and price thus also not
+within the scope of our project. An example would be orange juice. There are
+many different brands of orange juice all with their own respective prices and
+various sizes. 
 
 With these issues with available datasets at hand, we formulated our own dataset
 of grocery food items. For our custom dataset, we used the online shopping
 utility available on Kroger.com. From here, we sort by all departments shopping
-and selected grocery food items that are definable within food groups. This
+and select grocery food items that are definable within food groups. This
 meaning, items that were complete meals or that combined food groups were
 omitted. Examples of this would be a can of ravioli as there are plentiful
 grains as well as meats within the item. We prioritized items that were
 singularly within one food group such as raw meat, vegetables, or grains. Other
-criteria that is selected is the price, and weight. Of course some items are
+criteria that are selected is the price, and weight. Of course some items are
 priced by unit instead of by weight thus to solve this issue, a quick google
 search of the average weight was used. An example of this would be an apple that
 Kroger sells for one dollar per apple. We would google the average weight of an
 apple and add it to our database as price and weight. An example of our dataset
 can be seen below in table \ref{table:Example of Groceries Dataset}. After
 nearing 70 pages of Kroger's shopping database, and selecting certain items, as
-of now our database sits at 190 entries. Limitations of brand and size were also
-challenges that we faced. Entry in our database such as white bread, was
+of now our database sits at 189 entries. Limitations of brand and size were also
+challenges that we faced. Entries in our database such as white bread, were
 selected as the generic Kroger brand white bread with its associated price and
-weight. All other forms of white bread and brands were omitted as to avoid
-confusion and complexity in our database. As time progresses and if there arises
-a necesity, the dataset will be refined with either the addition or subtraction
-of items.
+weight. All other forms of white bread and brands were omitted to avoid
+confusion and complexity in our database as well as redundancy. As time
+progresses and if there arises a necessity, the dataset will be refined with
+either the addition or subtraction of items.
+
 
 \begin{table}[h]
     \setlength\tabcolsep{2pt}
@@ -708,11 +719,11 @@ discussed further in the discussion sections, the current algorithms are set to
 work as conventional 0-1 knapsacks disregarding food group criteria. These two
 baseline algorithms serve to demonstrate the time complexity and usability in
 comparison to the genetic algorithm that will be implemented in the future. Both
-the brute force and dynamic programing methods take in the budget as a
-constraint, using weights as the value to maximize and considers items by their
+the brute force and dynamic programming methods take in the budget as a
+constraint, using weights as the value to maximize and consider items by their
 price. The brute force algorithm uses itertools combination method to create a
 list of all possible combinations within the budget constraint, and then chooses
-the maximum value and list that composes of that combination.
+the maximum value and list that composes that combination.
 
 Using dynamic programming for our algorithm, we intended to use a top-down
 memoization approach to compute subproblems for the price limit and weight
@@ -728,26 +739,16 @@ algorithm is subject to being a 0-1 knapsack. Any result using memoization
 returns a list filled entirely with the single best price-to-weight ratio. This
 is not ideal nor realistic for a practical grocery list.
 
-A limitation of the memoization approach is how the price is handled by the
-memo table. The table requires an index in the form of a whole number integer
-and is incremented by a value of one. This gives two options: either generate
-the table cent-wise or limit the price and price limit to whole dollars. The
-first option results in a major increase in the table size as the 200X100 table
-mentioned above would become a 200X10,000 table. This would be fine for a small
-dataset but would be expensive to compute and store given a super-market sized
-dataset of items. The second option allows for a comparably small table but
-gives results that do not reflect the actual value of the items in the list due
-to rounding. We also realized that maintaining weight ratios between the
-different food categories using memoization would prove more difficult than
-anticipated. While there are approaches to the multi-dimensional knapsack
-problem using memoization, none explored adequately allowed for this ratio
-problem to be solved. We speculated that we could use a table that is three
-dimensional. This would be n*m*k, where n is the number of items in the dataset,
-m is the price limit, and k is the number of food groups. Each index would
-maintain an approximate ratio of the food groups as set by the user. However, we
-were unsure on how to make this operate as intended.
+Our logic for selecting the genetic algorithm was that the genetic approach of
+selecting 'fitness' of data points could prove to be a better fit. Genetic
+algorithms rely on randomization of selected items for a specific subset size
+and compares the values of each item. These subsets are stored as 'chromosomes',
+typically as a binary encoding, that have a length of the number of items. Using
+a fitness function, we can find the best chromosome in the subsets to fill the
+knapsack. Each encoded 1 in the chromosome corresponds to a specific item that
+is added to the knapsack while the 0 items are not added. 
 
-Lastly we have developed a userinterface (UI) system that allows our program
+Lastly we have developed a user interface (UI) system that allows our program
 ease of use. An example of it can be seen in figure \ref{fig:UI3}. We decided to
 create a GUI system using Tkinter, an import within pythons' built-in library,
 for our algorithm to help users interact with the system more easily. Using its
@@ -765,9 +766,54 @@ user.
     \label{fig:UI3}
 \end{figure}
 
-\section{Preliminary Results}
+\section{Literature Review}
+“On the Partition of Numbers” by G. B. Mathews explores the multichoice,
+multi-dimensional knapsack problem back in 1896 as one of the earliest to do so.
+Although it was not known as the knapsack problem in his work, it does propose a
+problem of finding a set of non-negative integers that are a multivariate number
+with N number of assignments. Mathews concludes that the formula solution for
+some set of integers would be the same solution as used for a different set of
+integers \cite{mathews_partition_1896}.
+
+Caserta, et al. propose tackling the multiple choice multidimensional knapsack
+using a lagrangian based scheme. Their technique combines lagrangian relaxation
+with the corridor method. Their results show the most competitive approaches for
+the nominal multiple choice multidimensional knapsack however their goal was to
+investigate the trade off between solution reliability and robustness price in
+hopes to bring theory and practice in operations research world
+\cite{caserta_robust_2019}.
+
+“A hybrid genetic algorithm for the multidimensional knapsack problem” by F.
+Djannaty and S. Doostdar was an interesting read on the development of a genetic
+algorithm to work with MD knapsack. We looked at this article to see what it
+would take to create a hybrid GA to solve knapsack. Looked at the constraints
+they used for mutations and cross-breeding, as well as the functions and
+formulas they used to create the algorithm \cite{djannaty_hybrid_2008}. 
+
+“A hybrid heuristic for the multiple choice multidimensional knapsack problem”
+by R. Mansi, C. Alves, C. Valerio de, and S. Hanafi.  The aim of this article
+was to see how we could set up constraints to separate our food groups into
+different classes, so that we could run our algorithms. It was also our aim to
+see how a heuristic algorithm would operate for this problem. When looking into
+the testing they add one item from each class into their knapsack. When it came
+to the heuristic approach they refined the upper and lower bounds of their
+algorithm. Creating multiple stages in their algorithm to adjust to different
+inputs. Having cutting, fixation, and reformulation phases as well as multiple
+others used to calculate their solution \cite{mansi_hybrid_2013}.
+
+“Neural Knapsack: A Neural Network Based Solver for the Knapsack Problem'' by
+Nomer, Alnowibet, Elsayed, and Mohamed proposes a neural network and deep
+learning based heuristic for solving the knapsack problem. This is accomplished
+by keeping the relationships of items to the capacity based on previous attempts
+and leveraging the ability to utilize the distribution of the data. As such, the
+proposed model generalizes based on the correlation between values and weights
+of the items in the set and their history of being selected. The authors find
+that this method was able to outperform the greedy algorithm approach using
+their synthetic testing sets \cite{nomer_neural_2020}.
+
+\section{Results}
 To serve as a baseline, we have implemented a brute force algorithm that works
-on our dataset to select items that results in the heaviest shopping cart while
+on our dataset to select items that result in the heaviest shopping cart while
 staying under budget. From the runtimes, it is clear that brute force is
 extremely slow. We truncate our grocery dataset to collect runtimes with a
 budget of 100 dollars. Initially with a list length of 10 items, the run time is
@@ -803,7 +849,7 @@ growth order of O(n*m) where n is the number of items in the dataset and m is
 the price limit of the grocery list. As can be seen in figure
 \ref{fig:dynamic_timecomplexity.png} the run time is much quicker compared to
 the brute force. In addition to this, it was able to clear the entire data set
-while the brute force was not. This can be seen more more clearly in table
+while the brute force was not. This can be seen more clearly in table
 \ref{table:dynamic_runtimes.tex}. For comparison, the bruteforce runtime for a
 list of 20 items was 1.57 seconds while the dynamic programming took 0.000997
 for the same list length. This is a much more rapid solution.
@@ -824,66 +870,173 @@ for the same list length. This is a much more rapid solution.
     \label{fig:dynamic_timecomplexity.png}
 \end{figure}
 
+The genetic algorithm was able to clear the entirety of the custom dataset
+similarly to the dynamic programming. Despite this, across the board the genetic
+algorithm had a slower runtime than the dynamic programming by a factor of ten.
+However, despite the slower performance, the genetic algorithm did not have an
+increase in runtimes similar to the dynamic programming. As can be seen in table
+\ref{table:genetic_runtimes.tex}, there are certain larger list lengths that
+have a quicker runtime than smaller list lengths. The time difference between
+runtimes of varying list lengths did not increase by much while the other two
+baseline algorithms had a clear increase in runtimes as the dataset size
+increased. These results and runtimes can be seen in figure
+\ref{fig:genetic_timecomplexity.png}. There are situations where the output of
+the genetic algorithm surpasses the amount set by the budget restraint and these
+are due to the inner workings of the numpy library as well as rounding issues.
+There are times where the budget restriction is set to a price such as 35, and
+the total output list is 35.14. 
+
+\begin{table}[h]
+    \setlength\tabcolsep{2pt}
+    \centering
+    \include{assets/genetic_runtime.tex}
+    \caption{Genetic runtimes of custom dataset}
+    \label{table:genetic_runtimes.tex}
+\end{table}
+
+\begin{figure}[h]
+    \centering
+    \textbf{Genetic Runtime Chart}
+    \includegraphics[width=\columnwidth]{assets/genetic_runtime.png}
+    \caption{Plotted runtime chart for the genetic algorithm}
+    \label{fig:genetic_timecomplexity.png}
+\end{figure}
+
 \section{Discussion and Future Works}
-As of the writing of this paper and this middle update, two base line
-conventional algorithms have been developed for the project: brute force and
-dynamic programming. These two methods are tried and true however their
-limitations in time complexity as well as being resource dependent show that
-their usage is limited. For datasets that are small as seen in the tables in the
-preliminary results section, they have satisfactory performance, however, for
-larger datasets they are not optimal and are not ideal. For this reason, we are
-currently implementing a heuristic and nonconventional algorithm while
-considering other unconventional methods\cite{nomer_neural_2020} \cite{mansi_hybrid_2013}.
+Two baseline conventional algorithms have been developed for the project: brute
+force and dynamic programming. These two methods are tried and true however
+their limitations in time complexity as well as being resource dependent show
+that their usage is limited. For datasets that are small as seen in the tables
+in the preliminary results section, they have satisfactory performance, however,
+for larger datasets they are not optimal and are not ideal. For this reason, we
+implemented a heuristic and nonconventional algorithm while considering other
+unconventional methods such as neural networks or other advanced designes with
+upper and lower bounds\cite{nomer_neural_2020} \cite{mansi_hybrid_2013}.
 
-We have since switched to developing an algorithm using the genetic algorithm
-approach \cite{djannaty_hybrid_2008}. Because the data is not well suited to
-memoization, the genetic approach of selecting 'fitness' of data points could
-prove to be a better fit. Genetic algorithms rely on randomization of selected
-items for a specific subset size and compares the values of each item. These
-subsets are stored as 'chromosomes', typically as a binary encoding, that have a
-length of the number of items. Using a fitness function, we can find the best
-chromosome in the subsets to fill the knapsack. Each encoded 1 in the chromosome
-corresponds to a specific item that is added to the knapsack while the 0 items
-are not added. Unlike memoization, this allows for us to consider the cent
-amounts in the price of each item and to potentially find the optimal solution
-for the food group ratios without the need for increasing the dimensionality by
-the number of groups.
+Looking at the genetic algorithm it is clear that is being given a disadvantage
+by the small dataset. Because the dataset is only composed of 189 items, the
+dynamic programming algorithm is able to clear it much quicker than the genetic
+algorithm. However, if the dataset were to be much larger such as a real world
+retail grocery store dataset with over 10,000 items, the genetic algorithm would
+be able to clear the dataset much more quickly. This is due to the advantage of
+the genetic algorithm to run on a heuristic and only being time limited based on
+its ability to process its fitness function and generations. On the other hand
+the conventional dynamic programming algorithm would be forced to create a table
+of the entire dataset and go through each and every item. Another benefit that
+the genetic algorithm was able to provide over the other two algorithms was that
+it introduced a level of diversity. Because it works by introducing random
+populations of items, the pre-selected items are diversified in their weights,
+prices, and food types whereas the dynamic and brute force algorithms will
+output the same results and answers each time. 
 
-In addition to this, we are facing design issues with our project
-implementation. As can be seen in our brute force and dynamic programming we are
-utilizing these algorithms as 0-1 knapsacks without consideration of food groups
-which was a third dimension in our original design. The reason for this is that
-a conventional grocery store would behave as an unbounded knapsack. Of course
-there are not infinite amounts of inventory, however, a typical grocery store
-inventory is substantial enough that to a typical shopper, it would not be
-feasible to empty the stock of a certain item.
+Plans to increase the dataset size were also considered but not executed due to
+the limitations and reasoning of creating the custom dataset in the first place.
+Because of the amount of redundancy and item overlap of traditional large chain
+grocery stores we were not able to increase the amount of produce and meat or
+dairy products in our dataset. There are only a certain amount of raw food items
+that can be considered without taking in the account of brand and sizes.
+Increasing our dataset to a larger size would result in redundancy of multiple
+brands and sizes of the same items.
 
+In addition to the dataset problem, there were many other design issues that our
+project implementation faced. As can be seen in our brute force and dynamic
+programming we are utilizing these algorithms as 0-1 knapsacks without
+consideration of food groups which was a third dimension in our original design.
+The reason for this is that a conventional grocery store would behave as an
+unbounded knapsack. Of course there are not infinite amounts of inventory,
+however, a typical grocery store inventory is substantial enough that to a
+typical shopper, it would not be feasible to empty the stock of a certain item.
 With this being said, designing the knapsack as unbounded would result in less
 choices that the algorithm would choose. It would simply pick an item that
 resulted in the maximum weight to price ratio and then select that item until
 the budget is met. An example would be selecting water melons which on average
-weight roughly 25 pounds. In the custom groceries dataset, watermelon is listed
+weigh roughly 25 pounds. In the custom groceries dataset, watermelon is listed
 as 22 pounds with a price of 6.99. It would be too trivial for the algorithm to
 select watermelons until whatever budget is met thus resulting in the most
-efficient shopping cart. Introducing our assigned ratios of food groups would
-simply extend this issue. By forcing the algorithm to select a certain ratio of
-grains, meats, and dairy and so on, it would select items on a similar premise.
-For fruit, it would only select watermelons, for meats it would select an item
-that has the most efficient weight to price item as well. These would repeat
-until the budget is met and all food groups are to be accounted for. With that
-being said, there are some design choices that need to be made and reconsidered
-for the future of this endeavor.
+efficient shopping cart.
+
+Introducing our assigned ratios of food groups would simply extend this issue.
+By forcing the algorithm to select a certain ratio of grains, meats, and dairy
+and so on, it would select items on a similar premise. For fruit, it would only
+select watermelons, for meats it would select an item that has the most
+efficient weight to price item as well. These would repeat until the budget is
+met and all food groups are to be accounted for. This can be combated by
+dividing the initial budget into the ratios of the food groups and then running
+the genetic algorithm in parallel with a reduced budget. Once this is complete
+the list would be combined. However, we also decided to opt out of this
+implementation as it is not a true multi-dimensional knapsack with food groups
+being a third dimension. This simply is just subdividing the budget and then
+performing the genetic algorithm with a subdivided dataset multiple times over
+for each food group. This does not introduce a new dimension or complexity to
+the problem. Another aspect of the food group design is the difficulty to
+quantify the food items. How many servings is a bag of rice or within one water
+melon? These aspects make it difficult to divide the food groups into ratios
+that are to be added to the algorithm. With that being said, there are some
+design choices that need to be made and reconsidered for the future of this
+endeavor and that the initial design of the project was met with many overly
+complicated ideas that were actually too simple to solve. 
+
+\section{Peer Session Reviews}
+
+Each group member picked a presentation and wrote about what they found
+interesting about the group's project. One of the presentations that we found
+ourselves interested in was the Solving Sudoku Puzzle using Deep Learning. We
+looked into this one to see what deep learning technique they were using to
+accomplish their goal state. When looking at their implementation process we saw
+that they implemented CNN model in order to solve their puzzle which took about
+three seconds to complete. It was interesting to see how they implemented CNN in
+the fact they had to re-shape after flattening their model.
+
+Our second presentation that we decided to look into was the Classification of
+Star project. One of our members did a similar project in another course that
+also attempted to classify stars by stellar types, although using a different
+type of classification. Stars are typically classified by two methods of
+classification. Heil used the Morgan-Keenan scale spectral types, which are
+seven types from O to M, based on the estimated temperature of the star derived
+from emission spectra readings. As alluded to in Heil's presentation, another
+classification type is the Yerkes type based on the evolutionary states of
+stars, such as dwarfs and giants. Heil used decision tree and SVM models to
+classify his data. Because the clustering of the data should be pretty well
+defined, it would make sense to use these models. This is especially the case
+for SVM as, depending on the type, is a discriminative model for finding the
+decision boundary of a class. Heil's approach for his data was to use a dataset
+from Kaggle that had feature engineering already done. This is advantageous as
+this feature engineering requires in depth knowledge of how professional
+astronomers use the raw data. For example, it already has temperature defined,
+instead of being typically derived from the intersection of blue and violet
+filtered channels of the electro-magnetic spectrum.
+
+Our third presentation that we picked was a presentation about implementing
+digit recognition, using neural networks as algorithm solver. When looking into
+their implementation it was interesting to see that they implemented KNN and CNN
+models. When looking at their results it was interesting to see that KNN and CNN
+model accuracies were about the same when it came to single digits. But when it
+comes to multiple numbers it seems from the data results that a CNN model is
+needed for getting the correct number. It was also interesting to see what
+dataset they were using to develop their project. Using two different sets of
+data to look at two potential  problems and trying to solve both of them using
+one algorithm.
 
 \section{Conclusion}
 Our implementation of brute force to approach the knapsack problem aligns with
-conventional train of thought. Run times were incredible slow especially as the
-size of the dataset increases resulting in an exponential time complexity
-growth. In addition to this, our dynamic programming, approach also matches what
+the conventional train of thought. Run times were incredibly slow especially as
+the size of the dataset increases resulting in an exponential time complexity
+growth. In addition to this, our dynamic programming approach also matches what
 can be found with literature. Dynamic programming allows a much more rapid
-solution to the knapsack in comparison to the brute force algorithm. With these
-two we have developed a UI system for ease of use however, in the future we are
-planning to implement a genetic algorithm that can surpass even the time
-complexity of dynamic programming.
+solution to the knapsack in comparison to the brute force algorithm and
+surprisingly faster than a genetic algorithm given this small dataset size.
+Unfortunately we were not able to provide a dataset that allowed the genetic
+algorithm to show its true strengths in comparison to conventional algorithms.
+With these three we have developed a UI system for ease of use.
+
+We were unable to implement the second half of our project implementation due to
+various philosophical design aspects. Unbound knapsacks exist and are realistic
+representations of grocery stores while this knapsack design is not applicable
+for any of the algorithms that we developed. In addition to this, food groups as
+a third dimensional is nearly undefinable and face similar problems of the
+unbound knapsack with a limited amount of selection and diversity. For these
+multitude of reasons we have decided to alter our implementation and must
+consider further design choices in the future. 
 
 
 % if have a single appendix:

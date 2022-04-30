@@ -1,9 +1,10 @@
-This is BibTeX, Version 0.99d (TeX Live 2021/W32TeX)
+This is BibTeX, Version 0.99d (TeX Live 2022)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: report.aux
 A level-1 auxiliary file: assets/example_groceries.aux
 A level-1 auxiliary file: assets/bruteforce_results.aux
 A level-1 auxiliary file: assets/dynamic_runtime.aux
+A level-1 auxiliary file: assets/genetic_runtime.aux
 The style file: IEEEtran.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -18,7 +19,7 @@ Database file #1: references.bib
 Done.
 You've used 6 entries,
             4087 wiz_defined-function locations,
-            869 strings with 8635 characters,
+            870 strings with 8661 characters,
 and the built_in function-call counts, 5342 in all, are:
 = -- 451
 > -- 104

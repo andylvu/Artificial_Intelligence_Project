@@ -1,24 +1,24 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.24)  25 MAR 2022 20:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.30)  30 APR 2022 18:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/Andy/project1/vscode/Artificial_Intelligence_Project/report/report.tex
-(c:/Users/Andy/project1/vscode/Artificial_Intelligence_Project/report/report.tex
-LaTeX2e <2021-06-01> patch level 1
-L3 programming layer <2021-08-27> (c:/texlive/2021/texmf-dist/tex/latex/ieeetran/IEEEtran.cls
+**c:/Users/Andy/Documents/vscode/Artificial_Intelligence_Project/report/report.tex
+(c:/Users/Andy/Documents/vscode/Artificial_Intelligence_Project/report/report.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-04-29> (c:/texlive/2022/texmf-dist/tex/latex/ieeetran/IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
 \@IEEEtrantmpdimenA=\dimen138
 \@IEEEtrantmpdimenB=\dimen139
 \@IEEEtrantmpdimenC=\dimen140
-\@IEEEtrantmpcountA=\count182
-\@IEEEtrantmpcountB=\count183
-\@IEEEtrantmpcountC=\count184
+\@IEEEtrantmpcountA=\count185
+\@IEEEtrantmpcountB=\count186
+\@IEEEtrantmpcountC=\count187
 \@IEEEtrantmptoksA=\toks16
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 503.
-(c:/texlive/2021/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+(c:/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 -- Using IEEE Computer Society mode.
@@ -81,55 +81,55 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <24.09> not available
 \IEEEiednormlabelsep=\dimen154
 \IEEEiedmathlabelsep=\dimen155
 \IEEEiedtopsep=\skip47
-\c@section=\count185
-\c@subsection=\count186
-\c@subsubsection=\count187
-\c@paragraph=\count188
-\c@IEEEsubequation=\count189
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@IEEEsubequation=\count192
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
-\c@figure=\count190
-\c@table=\count191
-\@IEEEeqnnumcols=\count192
-\@IEEEeqncolcnt=\count193
-\@IEEEsubeqnnumrollback=\count194
+\c@figure=\count193
+\c@table=\count194
+\@IEEEeqnnumcols=\count195
+\@IEEEeqncolcnt=\count196
+\@IEEEsubeqnnumrollback=\count197
 \@IEEEquantizeheightA=\dimen156
 \@IEEEquantizeheightB=\dimen157
 \@IEEEquantizeheightC=\dimen158
 \@IEEEquantizeprevdepth=\dimen159
-\@IEEEquantizemultiple=\count195
+\@IEEEquantizemultiple=\count198
 \@IEEEquantizeboxA=\box50
 \@IEEEtmpitemindent=\dimen160
 \IEEEPARstartletwidth=\dimen161
-\c@IEEEbiography=\count196
+\c@IEEEbiography=\count199
 \@IEEEtranrubishbin=\box51
-) (c:/texlive/2021/texmf-dist/tex/latex/cite/cite.sty
+) (c:/texlive/2022/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
-) (c:/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
- (c:/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+) (c:/texlive/2022/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (c:/texlive/2022/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
-) (c:/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+) (c:/texlive/2022/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
- (c:/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (c:/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+ (c:/texlive/2022/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (c:/texlive/2022/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
- (c:/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
+ (c:/texlive/2022/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen162
 \Gin@req@width=\dimen163
-) (c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count197
+) (c:/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-04-20 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count266
 \l__pdf_internal_box=\box52
-) (./report.aux (./assets/example_groceries.aux) (./assets/bruteforce_results.aux) (./assets/dynamic_runtime.aux))
+) (./report.aux (./assets/example_groceries.aux) (./assets/bruteforce_results.aux) (./assets/dynamic_runtime.aux) (./assets/genetic_runtime.aux))
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 324.
@@ -148,71 +148,71 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 324.
 LaTeX Font Info:    ... okay on input line 324.
 
 -- Lines per column: 61 (exact).
-(c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count198
+\scratchcounter=\count267
 \scratchdimen=\dimen164
 \scratchbox=\box53
-\nofMPsegments=\count199
-\nofMParguments=\count266
+\nofMPsegments=\count268
+\nofMParguments=\count269
 \everyMPshowfont=\toks18
-\MPscratchCnt=\count267
+\MPscratchCnt=\count270
 \MPscratchDim=\dimen165
-\MPnumerator=\count268
-\makeMPintoPDFobject=\count269
+\MPnumerator=\count271
+\makeMPintoPDFobject=\count272
 \everyMPtoPDFconversion=\toks19
-) (c:/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (c:/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+ (c:/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 447.
- (c:/texlive/2021/texmf-dist/tex/latex/psnfss/ot1phv.fd
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 454.
+ (c:/texlive/2022/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 447.
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 454.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <11.04124> on input line 447.
+(Font)              <11.04124> on input line 454.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.72884> on input line 447.
+(Font)              <7.72884> on input line 454.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.52061> on input line 447.
-LaTeX Font Info:    Trying to load font information for U+pzd on input line 447.
- (c:/texlive/2021/texmf-dist/tex/latex/psnfss/upzd.fd
+(Font)              <5.52061> on input line 454.
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 454.
+ (c:/texlive/2022/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
-LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 447.
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 454.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8.03> on input line 447.
+(Font)              <8.03> on input line 454.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.62097> on input line 447.
+(Font)              <5.62097> on input line 454.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <4.015> on input line 447.
+(Font)              <4.015> on input line 454.
 
-Underfull \hbox (badness 10000) in paragraph at lines 447--447
+Underfull \hbox (badness 10000) in paragraph at lines 454--454
 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 514.
-(c:/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 521.
+(c:/texlive/2022/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 525.
+LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 532.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9.53561> on input line 525.
+(Font)              <9.53561> on input line 532.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6.6749> on input line 525.
+(Font)              <6.6749> on input line 532.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <4.7678> on input line 525.
-LaTeX Font Info:    Calculating math sizes for size <7.02625> on input line 552.
+(Font)              <4.7678> on input line 532.
+LaTeX Font Info:    Calculating math sizes for size <7.02625> on input line 558.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.02625> on input line 552.
+(Font)              <7.02625> on input line 558.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <4.91833> on input line 552.
+(Font)              <4.91833> on input line 558.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <3.51312> on input line 552.
- [1{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+(Font)              <3.51312> on input line 558.
+ [1{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
@@ -226,15 +226,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 <assets/AIprojectUI3.JPG, id=17, 269.50688pt x 330.48468pt>
 File: assets/AIprojectUI3.JPG Graphic file (type jpg)
 <use assets/AIprojectUI3.JPG>
-Package pdftex.def Info: assets/AIprojectUI3.JPG  used on input line 763.
+Package pdftex.def Info: assets/AIprojectUI3.JPG  used on input line 764.
 (pdftex.def)             Requested size: 252.94499pt x 310.18161pt.
 \openout2 = `assets/bruteforce_results.aux'.
 
- (./assets/bruteforce_results.tex)
-<assets/bruteforce_runtime.png, id=18, 791.95876pt x 542.025pt>
+ (./assets/bruteforce_results.tex) [3 <./assets/AIprojectUI3.JPG>]
+<assets/bruteforce_runtime.png, id=22, 791.95876pt x 542.025pt>
 File: assets/bruteforce_runtime.png Graphic file (type png)
 <use assets/bruteforce_runtime.png>
-Package pdftex.def Info: assets/bruteforce_runtime.png  used on input line 795.
+Package pdftex.def Info: assets/bruteforce_runtime.png  used on input line 841.
 (pdftex.def)             Requested size: 252.94499pt x 173.11244pt.
 \openout2 = `assets/dynamic_runtime.aux'.
 
@@ -242,64 +242,76 @@ Package pdftex.def Info: assets/bruteforce_runtime.png  used on input line 795.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<assets/dynamic_runtime.png, id=19, 718.685pt x 444.66125pt>
+<assets/dynamic_runtime.png, id=23, 718.685pt x 444.66125pt>
 File: assets/dynamic_runtime.png Graphic file (type png)
 <use assets/dynamic_runtime.png>
-Package pdftex.def Info: assets/dynamic_runtime.png  used on input line 822.
+Package pdftex.def Info: assets/dynamic_runtime.png  used on input line 868.
 (pdftex.def)             Requested size: 252.94499pt x 156.50224pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3
+\openout2 = `assets/genetic_runtime.aux'.
+
+(./assets/genetic_runtime.tex)
+<assets/genetic_runtime.png, id=25, 1213.53375pt x 733.74126pt>
+File: assets/genetic_runtime.png Graphic file (type png)
+<use assets/genetic_runtime.png>
+Package pdftex.def Info: assets/genetic_runtime.png  used on input line 900.
+(pdftex.def)             Requested size: 252.94499pt x 152.93703pt.
 
 
-
- <./assets/AIprojectUI3.JPG> <./assets/bruteforce_runtime.png (PNG copy)>] (./report.bbl
-** WARNING: IEEEtran.bst: No hyphenation pattern has been
-** loaded for the language `en'. Using the pattern for
-** the default language instead.
-** WARNING: IEEEtran.bst: No hyphenation pattern has been
-** loaded for the language `en'. Using the pattern for
-** the default language instead.
-** WARNING: IEEEtran.bst: No hyphenation pattern has been
-** loaded for the language `en'. Using the pattern for
-** the default language instead.
-** WARNING: IEEEtran.bst: No hyphenation pattern has been
-** loaded for the language `en'. Using the pattern for
-** the default language instead.
-
-Overfull \hbox (19.55627pt too wide) in paragraph at lines 34--39
-\OT1/ppl/m/n/8.03 https://www.sciencedirect.com/science/article/pii/S0305048317305777 
- []
-
-** WARNING: IEEEtran.bst: No hyphenation pattern has been
-** loaded for the language `en'. Using the pattern for
-** the default language instead.
-
-Underfull \hbox (badness 4217) in paragraph at lines 42--46
-\OT1/ppl/m/n/8.03 sack Prob-lem (MKP),'' Jul. 2021. [On-
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [4
 
 
 
- <./assets/dynamic_runtime.png>]) [5
 
-] (./report.aux (./assets/example_groceries.aux) (./assets/bruteforce_results.aux) (./assets/dynamic_runtime.aux)) ) 
+
+
+
+
+
+ <./assets/bruteforce_runtime.png (PNG copy)> <./assets/dynamic_runtime.png>] [5 <./assets/genetic_runtime.png (PNG copy)>] (./report.bbl
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `en'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `en'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `en'. Using the pattern for
+** the default language instead.
+
+Underfull \hbox (badness 4217) in paragraph at lines 34--38
+\OT1/ppl/m/n/8.03 sack Prob-lem (MKP),'' Jul. 2021. [On-
+ []
+
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `en'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `en'. Using the pattern for
+** the default language instead.
+
+Overfull \hbox (19.55627pt too wide) in paragraph at lines 41--46
+\OT1/ppl/m/n/8.03 https://www.sciencedirect.com/science/article/pii/S0305048317305777 
+ []
+
+) [6] (./report.aux (./assets/example_groceries.aux) (./assets/bruteforce_results.aux) (./assets/dynamic_runtime.aux) (./assets/genetic_runtime.aux)) ) 
 Here is how much of TeX's memory you used:
- 2378 strings out of 478599
- 41626 string characters out of 5858101
- 357569 words of memory out of 5000000
- 20230 multiletter control sequences out of 15000+600000
- 445188 words of font info for 109 fonts, out of 8000000 for 9000
+ 2554 strings out of 478305
+ 48628 string characters out of 5849246
+ 355957 words of memory out of 5000000
+ 20689 multiletter control sequences out of 15000+600000
+ 511017 words of font info for 110 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 57i,9n,66p,378b,369s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on report.pdf (5 pages, 188460 bytes).
+ 55i,9n,62p,379b,369s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on report.pdf (6 pages, 226771 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
+ 75 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

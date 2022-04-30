@@ -29,6 +29,13 @@ G.~B. Mathews, ``\BIBforeignlanguage{en}{On the {Partition} of {Numbers}},''
   \url{http://doi.wiley.com/10.1112/plms/s1-28.1.486}
 \BIBentrySTDinterwordspacing
 
+\bibitem{agha_binary_2021}
+\BIBentryALTinterwordspacing
+M.~Agha, ``\BIBforeignlanguage{en}{The {Binary} {Multidimensional} {Knapsack}
+  {Problem} ({MKP})},'' Jul. 2021. [Online]. Available:
+  \url{https://towardsdatascience.com/the-binary-multidimensional-knapsack-problem-mkp-2559745f5fde}
+\BIBentrySTDinterwordspacing
+
 \bibitem{caserta_robust_2019}
 \BIBentryALTinterwordspacing
 M.~Caserta and S.~Voß, ``\BIBforeignlanguage{en}{The robust multiple-choice
@@ -37,17 +44,10 @@ M.~Caserta and S.~Voß, ``\BIBforeignlanguage{en}{The robust multiple-choice
   \url{https://www.sciencedirect.com/science/article/pii/S0305048317305777}
 \BIBentrySTDinterwordspacing
 
-\bibitem{agha_binary_2021}
-\BIBentryALTinterwordspacing
-M.~Agha, ``\BIBforeignlanguage{en}{The {Binary} {Multidimensional} {Knapsack}
-  {Problem} ({MKP})},'' Jul. 2021. [Online]. Available:
-  \url{https://towardsdatascience.com/the-binary-multidimensional-knapsack-problem-mkp-2559745f5fde}
-\BIBentrySTDinterwordspacing
-
-\bibitem{nomer_neural_2020}
-H.~A.~A. Nomer, K.~A. Alnowibet, A.~Elsayed, and A.~W. Mohamed, ``Neural
-  {Knapsack}: {A} {Neural} {Network} {Based} {Solver} for the {Knapsack}
-  {Problem},'' \emph{IEEE Access}, vol.~8, pp. 224\,200--224\,210, 2020.
+\bibitem{djannaty_hybrid_2008}
+F.~Djannaty and S.~Doustdargholi, ``A hybrid genetic algorithm for the
+  multidimensional knapsack problem,'' \emph{Int. J. Contemp. Math. Sciences},
+  vol.~3, pp. 443--456, 01 2008.
 
 \bibitem{mansi_hybrid_2013}
 \BIBentryALTinterwordspacing
@@ -58,9 +58,9 @@ R.~Mansi, C.~Alves, J.~M. Valério~de Carvalho, and S.~Hanafi, ``A hybrid
   \url{https://ui.adsabs.harvard.edu/abs/2013EnOp...45..983M}
 \BIBentrySTDinterwordspacing
 
-\bibitem{djannaty_hybrid_2008}
-F.~Djannaty and S.~Doustdargholi, ``A hybrid genetic algorithm for the
-  multidimensional knapsack problem,'' \emph{Int. J. Contemp. Math. Sciences},
-  vol.~3, pp. 443--456, 01 2008.
+\bibitem{nomer_neural_2020}
+H.~A.~A. Nomer, K.~A. Alnowibet, A.~Elsayed, and A.~W. Mohamed, ``Neural
+  {Knapsack}: {A} {Neural} {Network} {Based} {Solver} for the {Knapsack}
+  {Problem},'' \emph{IEEE Access}, vol.~8, pp. 224\,200--224\,210, 2020.
 
 \end{thebibliography}
